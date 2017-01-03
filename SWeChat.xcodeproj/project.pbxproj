@@ -8,15 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		23A16DF01E1B884D007CD73A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16DEF1E1B884D007CD73A /* AppDelegate.swift */; };
-		23A16DF21E1B884D007CD73A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16DF11E1B884D007CD73A /* ViewController.swift */; };
-		23A16DF51E1B884D007CD73A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A16DF31E1B884D007CD73A /* Main.storyboard */; };
-		23A16DFA1E1B884D007CD73A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23A16DF81E1B884D007CD73A /* LaunchScreen.storyboard */; };
 		23A16E051E1B884D007CD73A /* SWeChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16E041E1B884D007CD73A /* SWeChatTests.swift */; };
 		23A16E101E1B884D007CD73A /* SWeChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16E0F1E1B884D007CD73A /* SWeChatUITests.swift */; };
 		23A16E321E1B8F0C007CD73A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23A16E311E1B8F0C007CD73A /* Assets.xcassets */; };
 		23A16E3D1E1B9175007CD73A /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16E3A1E1B9175007CD73A /* Notes.swift */; };
 		23A16E421E1B936A007CD73A /* QKMainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16E411E1B936A007CD73A /* QKMainTabController.swift */; };
 		23A16E441E1B944C007CD73A /* TSUIImage+WeChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16E431E1B944C007CD73A /* TSUIImage+WeChat.swift */; };
+		23A16E461E1B9608007CD73A /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16E451E1B9608007CD73A /* MessageController.swift */; };
+		23A16E481E1B9627007CD73A /* ConstactsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16E471E1B9627007CD73A /* ConstactsController.swift */; };
+		23A16E4A1E1B9642007CD73A /* DiscoverController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16E491E1B9642007CD73A /* DiscoverController.swift */; };
+		23A16E4C1E1B9659007CD73A /* MeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16E4B1E1B9659007CD73A /* MeController.swift */; };
+		23A16E4E1E1BA9F3007CD73A /* UICollor+WeChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16E4D1E1BA9F3007CD73A /* UICollor+WeChat.swift */; };
+		23A16E501E1BAFB3007CD73A /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23A16E4F1E1BAFB3007CD73A /* Media.xcassets */; };
 		C75E9317DD78DC99609B7EFF /* Pods_SWeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03996E874CF1D5276B420E2E /* Pods_SWeChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -41,9 +44,6 @@
 		03996E874CF1D5276B420E2E /* Pods_SWeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A16DEC1E1B884D007CD73A /* SWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A16DEF1E1B884D007CD73A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		23A16DF11E1B884D007CD73A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		23A16DF41E1B884D007CD73A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		23A16DF91E1B884D007CD73A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		23A16E001E1B884D007CD73A /* SWeChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWeChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A16E041E1B884D007CD73A /* SWeChatTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWeChatTests.swift; sourceTree = "<group>"; };
 		23A16E061E1B884D007CD73A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -56,6 +56,12 @@
 		23A16E3B1E1B9175007CD73A /* TSWeChat-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TSWeChat-Bridging-Header.h"; sourceTree = "<group>"; };
 		23A16E411E1B936A007CD73A /* QKMainTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKMainTabController.swift; sourceTree = "<group>"; };
 		23A16E431E1B944C007CD73A /* TSUIImage+WeChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TSUIImage+WeChat.swift"; sourceTree = "<group>"; };
+		23A16E451E1B9608007CD73A /* MessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
+		23A16E471E1B9627007CD73A /* ConstactsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstactsController.swift; sourceTree = "<group>"; };
+		23A16E491E1B9642007CD73A /* DiscoverController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DiscoverController.swift; sourceTree = "<group>"; };
+		23A16E4B1E1B9659007CD73A /* MeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeController.swift; sourceTree = "<group>"; };
+		23A16E4D1E1BA9F3007CD73A /* UICollor+WeChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollor+WeChat.swift"; sourceTree = "<group>"; };
+		23A16E4F1E1BAFB3007CD73A /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
 		85BDAE587576D80875DFB210 /* Pods-SWeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWeChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWeChat/Pods-SWeChat.debug.xcconfig"; sourceTree = "<group>"; };
 		8F1777F9A160EF32D704C198 /* Pods-SWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWeChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWeChat/Pods-SWeChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -119,9 +125,6 @@
 				23A16E2F1E1B8E4D007CD73A /* Resources */,
 				23A16E381E1B9175007CD73A /* Supportting Files */,
 				23A16DEF1E1B884D007CD73A /* AppDelegate.swift */,
-				23A16DF81E1B884D007CD73A /* LaunchScreen.storyboard */,
-				23A16DF31E1B884D007CD73A /* Main.storyboard */,
-				23A16DF11E1B884D007CD73A /* ViewController.swift */,
 			);
 			path = SWeChat;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 		23A16E241E1B8E0B007CD73A /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
+				23A16E471E1B9627007CD73A /* ConstactsController.swift */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -184,6 +188,7 @@
 		23A16E261E1B8E0B007CD73A /* Discover */ = {
 			isa = PBXGroup;
 			children = (
+				23A16E491E1B9642007CD73A /* DiscoverController.swift */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -191,6 +196,7 @@
 		23A16E271E1B8E0B007CD73A /* Me */ = {
 			isa = PBXGroup;
 			children = (
+				23A16E4B1E1B9659007CD73A /* MeController.swift */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -198,6 +204,7 @@
 		23A16E281E1B8E0B007CD73A /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				23A16E451E1B9608007CD73A /* MessageController.swift */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -228,6 +235,7 @@
 			isa = PBXGroup;
 			children = (
 				23A16E431E1B944C007CD73A /* TSUIImage+WeChat.swift */,
+				23A16E4D1E1BA9F3007CD73A /* UICollor+WeChat.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -249,6 +257,7 @@
 		23A16E2F1E1B8E4D007CD73A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				23A16E4F1E1BAFB3007CD73A /* Media.xcassets */,
 				23A16E311E1B8F0C007CD73A /* Assets.xcassets */,
 			);
 			path = Resources;
@@ -399,9 +408,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				23A16DFA1E1B884D007CD73A /* LaunchScreen.storyboard in Resources */,
 				23A16E321E1B8F0C007CD73A /* Assets.xcassets in Resources */,
-				23A16DF51E1B884D007CD73A /* Main.storyboard in Resources */,
+				23A16E501E1BAFB3007CD73A /* Media.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,10 +482,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23A16E4C1E1B9659007CD73A /* MeController.swift in Sources */,
 				23A16E421E1B936A007CD73A /* QKMainTabController.swift in Sources */,
-				23A16DF21E1B884D007CD73A /* ViewController.swift in Sources */,
 				23A16E441E1B944C007CD73A /* TSUIImage+WeChat.swift in Sources */,
 				23A16DF01E1B884D007CD73A /* AppDelegate.swift in Sources */,
+				23A16E481E1B9627007CD73A /* ConstactsController.swift in Sources */,
+				23A16E461E1B9608007CD73A /* MessageController.swift in Sources */,
+				23A16E4A1E1B9642007CD73A /* DiscoverController.swift in Sources */,
+				23A16E4E1E1BA9F3007CD73A /* UICollor+WeChat.swift in Sources */,
 				23A16E3D1E1B9175007CD73A /* Notes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,25 +524,6 @@
 			targetProxy = 23A16E0C1E1B884D007CD73A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		23A16DF31E1B884D007CD73A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				23A16DF41E1B884D007CD73A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		23A16DF81E1B884D007CD73A /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				23A16DF91E1B884D007CD73A /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		23A16E121E1B884D007CD73A /* Debug */ = {
@@ -631,6 +624,7 @@
 			baseConfigurationReference = 85BDAE587576D80875DFB210 /* Pods-SWeChat.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = "";
 				INFOPLIST_FILE = "$(SRCROOT)/SWeChat/Supportting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -638,6 +632,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = EasyIOS.SWeChat;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -646,6 +641,7 @@
 			baseConfigurationReference = 8F1777F9A160EF32D704C198 /* Pods-SWeChat.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				DEVELOPMENT_TEAM = 8QYB4F2VKK;
 				INFOPLIST_FILE = "$(SRCROOT)/SWeChat/Supportting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -655,6 +651,7 @@
 				PROVISIONING_PROFILE = "3463b704-3f84-4340-8d5a-f3fa2d9811cc";
 				PROVISIONING_PROFILE_SPECIFIER = DevelopAll1102;
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
