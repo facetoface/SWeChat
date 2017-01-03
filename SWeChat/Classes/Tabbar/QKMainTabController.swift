@@ -14,16 +14,16 @@ class QKMainTabController: UITabBarController {
         super.viewDidLoad()
 
     }
-
-    func setupViewController(){
-        let titleArray = ["微信","通讯录","发现","我"];
+    
+    func setupViewController() {
         
     }
-    
+
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
+
+
 
 }
