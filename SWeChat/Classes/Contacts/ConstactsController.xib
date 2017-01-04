@@ -11,6 +11,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ConstactsController" customModule="SWeChat" customModuleProvider="target">
             <connections>
+                <outlet property="footerLineHeightConstraint" destination="bYd-QQ-WZ3" id="bv6-R8-p0M"/>
+                <outlet property="footerView" destination="Mwf-xs-1gO" id="CI9-u0-xze"/>
+                <outlet property="listTableView" destination="Vh7-AO-3TX" id="s0q-Js-DdI"/>
+                <outlet property="totalNumberLabel" destination="vLt-yS-7IU" id="WHc-8g-OVk"/>
                 <outlet property="view" destination="iN0-l3-epB" id="C3y-T2-Mah"/>
             </connections>
         </placeholder>
@@ -18,7 +22,55 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Vh7-AO-3TX">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="Z0k-08-aAG"/>
+                        <outlet property="delegate" destination="-1" id="WBN-rb-Hsd"/>
+                    </connections>
+                </tableView>
+            </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Vh7-AO-3TX" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="AgY-sk-pb8"/>
+                <constraint firstAttribute="trailing" secondItem="Vh7-AO-3TX" secondAttribute="trailing" id="QTv-wk-rn8"/>
+                <constraint firstItem="Vh7-AO-3TX" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Rgp-f2-lvr"/>
+                <constraint firstAttribute="bottom" secondItem="Vh7-AO-3TX" secondAttribute="bottom" id="hMW-pj-Xhn"/>
+            </constraints>
+        </view>
+        <view contentMode="scaleToFill" id="Mwf-xs-1gO">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="40"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vLt-yS-7IU">
+                    <rect key="frame" x="70" y="11" width="180" height="21"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="ZHR-Uf-i05"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pAf-nQ-NHJ">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="1"/>
+                    <color key="backgroundColor" red="0.94117647059999998" green="0.94117647059999998" blue="0.94117647059999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="1" id="bYd-QQ-WZ3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="pAf-nQ-NHJ" firstAttribute="top" secondItem="Mwf-xs-1gO" secondAttribute="top" id="E44-Md-Nyr"/>
+                <constraint firstItem="vLt-yS-7IU" firstAttribute="top" secondItem="pAf-nQ-NHJ" secondAttribute="bottom" constant="10" id="Wfe-Os-pjk"/>
+                <constraint firstItem="vLt-yS-7IU" firstAttribute="leading" secondItem="Mwf-xs-1gO" secondAttribute="leading" constant="70" id="X8L-lb-7B3"/>
+                <constraint firstAttribute="trailing" secondItem="vLt-yS-7IU" secondAttribute="trailing" constant="70" id="fDf-Mo-hUM"/>
+                <constraint firstItem="pAf-nQ-NHJ" firstAttribute="leading" secondItem="Mwf-xs-1gO" secondAttribute="leading" id="umc-Ze-Nmw"/>
+                <constraint firstAttribute="trailing" secondItem="pAf-nQ-NHJ" secondAttribute="trailing" id="wS6-Rr-LDC"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
         </view>
     </objects>
 </document>

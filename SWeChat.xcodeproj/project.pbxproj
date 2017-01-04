@@ -30,6 +30,14 @@
 		23A2FCE41E1CC4F200517AC5 /* QKModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2FCE31E1CC4F200517AC5 /* QKModel.swift */; };
 		23A2FCE51E1CC59700517AC5 /* QKModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2FCE31E1CC4F200517AC5 /* QKModel.swift */; };
 		23A2FCE71E1CCD4500517AC5 /* ConstactsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A2FCE61E1CCD4500517AC5 /* ConstactsController.xib */; };
+		23A2FCEC1E1CD1B400517AC5 /* QKConstactCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2FCEA1E1CD1B400517AC5 /* QKConstactCell.swift */; };
+		23A2FCED1E1CD1B400517AC5 /* QKConstactCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A2FCEB1E1CD1B400517AC5 /* QKConstactCell.xib */; };
+		23A2FCEF1E1CD68F00517AC5 /* QKImageView+WebChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2FCEE1E1CD68F00517AC5 /* QKImageView+WebChat.swift */; };
+		23A2FCF51E1CEE1800517AC5 /* chat.json in Resources */ = {isa = PBXBuildFile; fileRef = 23A2FCF11E1CEE1800517AC5 /* chat.json */; };
+		23A2FCF61E1CEE1800517AC5 /* contact.json in Resources */ = {isa = PBXBuildFile; fileRef = 23A2FCF21E1CEE1800517AC5 /* contact.json */; };
+		23A2FCF71E1CEE1800517AC5 /* message.json in Resources */ = {isa = PBXBuildFile; fileRef = 23A2FCF31E1CEE1800517AC5 /* message.json */; };
+		23A2FCF81E1CEE1800517AC5 /* moments.json in Resources */ = {isa = PBXBuildFile; fileRef = 23A2FCF41E1CEE1800517AC5 /* moments.json */; };
+		23A2FCFA1E1CF1F300517AC5 /* NSDictionary+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2FCF91E1CF1F300517AC5 /* NSDictionary+Extension.swift */; };
 		C75E9317DD78DC99609B7EFF /* Pods_SWeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03996E874CF1D5276B420E2E /* Pods_SWeChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -79,6 +87,14 @@
 		23A2FCE11E1CC38000517AC5 /* QKContactModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKContactModel.swift; sourceTree = "<group>"; };
 		23A2FCE31E1CC4F200517AC5 /* QKModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKModel.swift; sourceTree = "<group>"; };
 		23A2FCE61E1CCD4500517AC5 /* ConstactsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConstactsController.xib; sourceTree = "<group>"; };
+		23A2FCEA1E1CD1B400517AC5 /* QKConstactCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKConstactCell.swift; sourceTree = "<group>"; };
+		23A2FCEB1E1CD1B400517AC5 /* QKConstactCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKConstactCell.xib; sourceTree = "<group>"; };
+		23A2FCEE1E1CD68F00517AC5 /* QKImageView+WebChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "QKImageView+WebChat.swift"; sourceTree = "<group>"; };
+		23A2FCF11E1CEE1800517AC5 /* chat.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = chat.json; sourceTree = "<group>"; };
+		23A2FCF21E1CEE1800517AC5 /* contact.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = contact.json; sourceTree = "<group>"; };
+		23A2FCF31E1CEE1800517AC5 /* message.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = message.json; sourceTree = "<group>"; };
+		23A2FCF41E1CEE1800517AC5 /* moments.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = moments.json; sourceTree = "<group>"; };
+		23A2FCF91E1CF1F300517AC5 /* NSDictionary+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDictionary+Extension.swift"; sourceTree = "<group>"; };
 		85BDAE587576D80875DFB210 /* Pods-SWeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWeChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWeChat/Pods-SWeChat.debug.xcconfig"; sourceTree = "<group>"; };
 		8F1777F9A160EF32D704C198 /* Pods-SWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWeChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWeChat/Pods-SWeChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -191,8 +207,8 @@
 		23A16E241E1B8E0B007CD73A /* Contacts */ = {
 			isa = PBXGroup;
 			children = (
-				23A16E471E1B9627007CD73A /* ConstactsController.swift */,
-				23A2FCE61E1CCD4500517AC5 /* ConstactsController.xib */,
+				23A2FCE91E1CD17A00517AC5 /* View */,
+				23A2FCE81E1CD17000517AC5 /* Controller */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -259,6 +275,7 @@
 				23A16E431E1B944C007CD73A /* TSUIImage+WeChat.swift */,
 				23A16E4D1E1BA9F3007CD73A /* UICollor+WeChat.swift */,
 				23A2FCDC1E1C96EA00517AC5 /* QKLog.swift */,
+				23A2FCEE1E1CD68F00517AC5 /* QKImageView+WebChat.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -266,6 +283,7 @@
 		23A16E2D1E1B8E38007CD73A /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				23A2FCF91E1CF1F300517AC5 /* NSDictionary+Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -280,6 +298,7 @@
 		23A16E2F1E1B8E4D007CD73A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				23A2FCF01E1CEE1800517AC5 /* JSON */,
 				23A16E4F1E1BAFB3007CD73A /* Media.xcassets */,
 				23A16E311E1B8F0C007CD73A /* Assets.xcassets */,
 			);
@@ -343,6 +362,35 @@
 				23A2FCE31E1CC4F200517AC5 /* QKModel.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		23A2FCE81E1CD17000517AC5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23A16E471E1B9627007CD73A /* ConstactsController.swift */,
+				23A2FCE61E1CCD4500517AC5 /* ConstactsController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		23A2FCE91E1CD17A00517AC5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				23A2FCEA1E1CD1B400517AC5 /* QKConstactCell.swift */,
+				23A2FCEB1E1CD1B400517AC5 /* QKConstactCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		23A2FCF01E1CEE1800517AC5 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				23A2FCF11E1CEE1800517AC5 /* chat.json */,
+				23A2FCF21E1CEE1800517AC5 /* contact.json */,
+				23A2FCF31E1CEE1800517AC5 /* message.json */,
+				23A2FCF41E1CEE1800517AC5 /* moments.json */,
+			);
+			path = JSON;
 			sourceTree = "<group>";
 		};
 		4796A531E64BE99F137694AA /* Pods */ = {
@@ -472,12 +520,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23A2FCF51E1CEE1800517AC5 /* chat.json in Resources */,
 				23A2FCE71E1CCD4500517AC5 /* ConstactsController.xib in Resources */,
 				23A16E321E1B8F0C007CD73A /* Assets.xcassets in Resources */,
 				23A16E501E1BAFB3007CD73A /* Media.xcassets in Resources */,
 				23A2FCCF1E1C8BAD00517AC5 /* Info.plist in Resources */,
 				23A2FCDB1E1C957B00517AC5 /* TSImageTextTableViewCell.xib in Resources */,
+				23A2FCF71E1CEE1800517AC5 /* message.json in Resources */,
+				23A2FCF81E1CEE1800517AC5 /* moments.json in Resources */,
+				23A2FCF61E1CEE1800517AC5 /* contact.json in Resources */,
 				23A2FCD11E1C8E2300517AC5 /* MeController.xib in Resources */,
+				23A2FCED1E1CD1B400517AC5 /* QKConstactCell.xib in Resources */,
 				23A2FCD71E1C912200517AC5 /* TSMeAvatarTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -557,10 +610,13 @@
 				23A16DF01E1B884D007CD73A /* AppDelegate.swift in Sources */,
 				23A16E481E1B9627007CD73A /* ConstactsController.swift in Sources */,
 				23A2FCDA1E1C957B00517AC5 /* TSImageTextTableViewCell.swift in Sources */,
+				23A2FCFA1E1CF1F300517AC5 /* NSDictionary+Extension.swift in Sources */,
 				23A2FCD61E1C912200517AC5 /* TSMeAvatarTableViewCell.swift in Sources */,
 				23A16E461E1B9608007CD73A /* MessageController.swift in Sources */,
 				23A2FCE21E1CC38000517AC5 /* QKContactModel.swift in Sources */,
 				23A2FCE41E1CC4F200517AC5 /* QKModel.swift in Sources */,
+				23A2FCEC1E1CD1B400517AC5 /* QKConstactCell.swift in Sources */,
+				23A2FCEF1E1CD68F00517AC5 /* QKImageView+WebChat.swift in Sources */,
 				23A2FCDD1E1C96EA00517AC5 /* QKLog.swift in Sources */,
 				23A16E4A1E1B9642007CD73A /* DiscoverController.swift in Sources */,
 				23A16E4E1E1BA9F3007CD73A /* UICollor+WeChat.swift in Sources */,
