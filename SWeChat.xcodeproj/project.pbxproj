@@ -26,6 +26,10 @@
 		23A2FCDA1E1C957B00517AC5 /* TSImageTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2FCD81E1C957B00517AC5 /* TSImageTextTableViewCell.swift */; };
 		23A2FCDB1E1C957B00517AC5 /* TSImageTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A2FCD91E1C957B00517AC5 /* TSImageTextTableViewCell.xib */; };
 		23A2FCDD1E1C96EA00517AC5 /* QKLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2FCDC1E1C96EA00517AC5 /* QKLog.swift */; };
+		23A2FCE21E1CC38000517AC5 /* QKContactModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2FCE11E1CC38000517AC5 /* QKContactModel.swift */; };
+		23A2FCE41E1CC4F200517AC5 /* QKModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2FCE31E1CC4F200517AC5 /* QKModel.swift */; };
+		23A2FCE51E1CC59700517AC5 /* QKModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2FCE31E1CC4F200517AC5 /* QKModel.swift */; };
+		23A2FCE71E1CCD4500517AC5 /* ConstactsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A2FCE61E1CCD4500517AC5 /* ConstactsController.xib */; };
 		C75E9317DD78DC99609B7EFF /* Pods_SWeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03996E874CF1D5276B420E2E /* Pods_SWeChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +76,9 @@
 		23A2FCD81E1C957B00517AC5 /* TSImageTextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSImageTextTableViewCell.swift; sourceTree = "<group>"; };
 		23A2FCD91E1C957B00517AC5 /* TSImageTextTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSImageTextTableViewCell.xib; sourceTree = "<group>"; };
 		23A2FCDC1E1C96EA00517AC5 /* QKLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKLog.swift; sourceTree = "<group>"; };
+		23A2FCE11E1CC38000517AC5 /* QKContactModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKContactModel.swift; sourceTree = "<group>"; };
+		23A2FCE31E1CC4F200517AC5 /* QKModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKModel.swift; sourceTree = "<group>"; };
+		23A2FCE61E1CCD4500517AC5 /* ConstactsController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ConstactsController.xib; sourceTree = "<group>"; };
 		85BDAE587576D80875DFB210 /* Pods-SWeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWeChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWeChat/Pods-SWeChat.debug.xcconfig"; sourceTree = "<group>"; };
 		8F1777F9A160EF32D704C198 /* Pods-SWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWeChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWeChat/Pods-SWeChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -127,8 +134,9 @@
 		23A16DEE1E1B884D007CD73A /* SWeChat */ = {
 			isa = PBXGroup;
 			children = (
-				23A2FCCD1E1C8BAD00517AC5 /* Supportting Files */,
 				23A16E221E1B8E0B007CD73A /* Classes */,
+				23A2FCDE1E1CC30900517AC5 /* CoreModule */,
+				23A2FCCD1E1C8BAD00517AC5 /* Supportting Files */,
 				23A16E301E1B8E5E007CD73A /* Vendor */,
 				23A16E2E1E1B8E3D007CD73A /* Mascro */,
 				23A16E2D1E1B8E38007CD73A /* Helpers */,
@@ -184,6 +192,7 @@
 			isa = PBXGroup;
 			children = (
 				23A16E471E1B9627007CD73A /* ConstactsController.swift */,
+				23A2FCE61E1CCD4500517AC5 /* ConstactsController.xib */,
 			);
 			path = Contacts;
 			sourceTree = "<group>";
@@ -191,6 +200,8 @@
 		23A16E251E1B8E0B007CD73A /* CoreModule */ = {
 			isa = PBXGroup;
 			children = (
+				23A2FCE01E1CC35300517AC5 /* Models */,
+				23A2FCDF1E1CC34D00517AC5 /* Http */,
 			);
 			path = CoreModule;
 			sourceTree = "<group>";
@@ -308,6 +319,30 @@
 				23A2FCD01E1C8E2300517AC5 /* MeController.xib */,
 			);
 			name = Controller;
+			sourceTree = "<group>";
+		};
+		23A2FCDE1E1CC30900517AC5 /* CoreModule */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = CoreModule;
+			path = Classes/CoreModule;
+			sourceTree = "<group>";
+		};
+		23A2FCDF1E1CC34D00517AC5 /* Http */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Http;
+			sourceTree = "<group>";
+		};
+		23A2FCE01E1CC35300517AC5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				23A2FCE11E1CC38000517AC5 /* QKContactModel.swift */,
+				23A2FCE31E1CC4F200517AC5 /* QKModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		4796A531E64BE99F137694AA /* Pods */ = {
@@ -437,6 +472,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23A2FCE71E1CCD4500517AC5 /* ConstactsController.xib in Resources */,
 				23A16E321E1B8F0C007CD73A /* Assets.xcassets in Resources */,
 				23A16E501E1BAFB3007CD73A /* Media.xcassets in Resources */,
 				23A2FCCF1E1C8BAD00517AC5 /* Info.plist in Resources */,
@@ -523,6 +559,8 @@
 				23A2FCDA1E1C957B00517AC5 /* TSImageTextTableViewCell.swift in Sources */,
 				23A2FCD61E1C912200517AC5 /* TSMeAvatarTableViewCell.swift in Sources */,
 				23A16E461E1B9608007CD73A /* MessageController.swift in Sources */,
+				23A2FCE21E1CC38000517AC5 /* QKContactModel.swift in Sources */,
+				23A2FCE41E1CC4F200517AC5 /* QKModel.swift in Sources */,
 				23A2FCDD1E1C96EA00517AC5 /* QKLog.swift in Sources */,
 				23A16E4A1E1B9642007CD73A /* DiscoverController.swift in Sources */,
 				23A16E4E1E1BA9F3007CD73A /* UICollor+WeChat.swift in Sources */,
@@ -534,6 +572,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23A16E051E1B884D007CD73A /* SWeChatTests.swift in Sources */,
+				23A2FCE51E1CC59700517AC5 /* QKModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
