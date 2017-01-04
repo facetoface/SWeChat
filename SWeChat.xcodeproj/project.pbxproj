@@ -11,7 +11,6 @@
 		23A16E051E1B884D007CD73A /* SWeChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16E041E1B884D007CD73A /* SWeChatTests.swift */; };
 		23A16E101E1B884D007CD73A /* SWeChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16E0F1E1B884D007CD73A /* SWeChatUITests.swift */; };
 		23A16E321E1B8F0C007CD73A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23A16E311E1B8F0C007CD73A /* Assets.xcassets */; };
-		23A16E3D1E1B9175007CD73A /* Notes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16E3A1E1B9175007CD73A /* Notes.swift */; };
 		23A16E421E1B936A007CD73A /* QKMainTabController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16E411E1B936A007CD73A /* QKMainTabController.swift */; };
 		23A16E441E1B944C007CD73A /* TSUIImage+WeChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16E431E1B944C007CD73A /* TSUIImage+WeChat.swift */; };
 		23A16E461E1B9608007CD73A /* MessageController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16E451E1B9608007CD73A /* MessageController.swift */; };
@@ -20,6 +19,13 @@
 		23A16E4C1E1B9659007CD73A /* MeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16E4B1E1B9659007CD73A /* MeController.swift */; };
 		23A16E4E1E1BA9F3007CD73A /* UICollor+WeChat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16E4D1E1BA9F3007CD73A /* UICollor+WeChat.swift */; };
 		23A16E501E1BAFB3007CD73A /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 23A16E4F1E1BAFB3007CD73A /* Media.xcassets */; };
+		23A2FCCF1E1C8BAD00517AC5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 23A2FCCE1E1C8BAD00517AC5 /* Info.plist */; };
+		23A2FCD11E1C8E2300517AC5 /* MeController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A2FCD01E1C8E2300517AC5 /* MeController.xib */; };
+		23A2FCD61E1C912200517AC5 /* TSMeAvatarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2FCD41E1C912200517AC5 /* TSMeAvatarTableViewCell.swift */; };
+		23A2FCD71E1C912200517AC5 /* TSMeAvatarTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A2FCD51E1C912200517AC5 /* TSMeAvatarTableViewCell.xib */; };
+		23A2FCDA1E1C957B00517AC5 /* TSImageTextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2FCD81E1C957B00517AC5 /* TSImageTextTableViewCell.swift */; };
+		23A2FCDB1E1C957B00517AC5 /* TSImageTextTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23A2FCD91E1C957B00517AC5 /* TSImageTextTableViewCell.xib */; };
+		23A2FCDD1E1C96EA00517AC5 /* QKLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A2FCDC1E1C96EA00517AC5 /* QKLog.swift */; };
 		C75E9317DD78DC99609B7EFF /* Pods_SWeChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03996E874CF1D5276B420E2E /* Pods_SWeChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,9 +57,6 @@
 		23A16E0F1E1B884D007CD73A /* SWeChatUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SWeChatUITests.swift; sourceTree = "<group>"; };
 		23A16E111E1B884D007CD73A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		23A16E311E1B8F0C007CD73A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		23A16E391E1B9175007CD73A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		23A16E3A1E1B9175007CD73A /* Notes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notes.swift; sourceTree = "<group>"; };
-		23A16E3B1E1B9175007CD73A /* TSWeChat-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "TSWeChat-Bridging-Header.h"; sourceTree = "<group>"; };
 		23A16E411E1B936A007CD73A /* QKMainTabController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKMainTabController.swift; sourceTree = "<group>"; };
 		23A16E431E1B944C007CD73A /* TSUIImage+WeChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TSUIImage+WeChat.swift"; sourceTree = "<group>"; };
 		23A16E451E1B9608007CD73A /* MessageController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageController.swift; sourceTree = "<group>"; };
@@ -62,6 +65,13 @@
 		23A16E4B1E1B9659007CD73A /* MeController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeController.swift; sourceTree = "<group>"; };
 		23A16E4D1E1BA9F3007CD73A /* UICollor+WeChat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollor+WeChat.swift"; sourceTree = "<group>"; };
 		23A16E4F1E1BAFB3007CD73A /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		23A2FCCE1E1C8BAD00517AC5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		23A2FCD01E1C8E2300517AC5 /* MeController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeController.xib; sourceTree = "<group>"; };
+		23A2FCD41E1C912200517AC5 /* TSMeAvatarTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSMeAvatarTableViewCell.swift; sourceTree = "<group>"; };
+		23A2FCD51E1C912200517AC5 /* TSMeAvatarTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSMeAvatarTableViewCell.xib; sourceTree = "<group>"; };
+		23A2FCD81E1C957B00517AC5 /* TSImageTextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSImageTextTableViewCell.swift; sourceTree = "<group>"; };
+		23A2FCD91E1C957B00517AC5 /* TSImageTextTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSImageTextTableViewCell.xib; sourceTree = "<group>"; };
+		23A2FCDC1E1C96EA00517AC5 /* QKLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKLog.swift; sourceTree = "<group>"; };
 		85BDAE587576D80875DFB210 /* Pods-SWeChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWeChat.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SWeChat/Pods-SWeChat.debug.xcconfig"; sourceTree = "<group>"; };
 		8F1777F9A160EF32D704C198 /* Pods-SWeChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SWeChat.release.xcconfig"; path = "Pods/Target Support Files/Pods-SWeChat/Pods-SWeChat.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -117,13 +127,13 @@
 		23A16DEE1E1B884D007CD73A /* SWeChat */ = {
 			isa = PBXGroup;
 			children = (
+				23A2FCCD1E1C8BAD00517AC5 /* Supportting Files */,
 				23A16E221E1B8E0B007CD73A /* Classes */,
 				23A16E301E1B8E5E007CD73A /* Vendor */,
 				23A16E2E1E1B8E3D007CD73A /* Mascro */,
 				23A16E2D1E1B8E38007CD73A /* Helpers */,
 				23A16E2C1E1B8E32007CD73A /* General */,
 				23A16E2F1E1B8E4D007CD73A /* Resources */,
-				23A16E381E1B9175007CD73A /* Supportting Files */,
 				23A16DEF1E1B884D007CD73A /* AppDelegate.swift */,
 			);
 			path = SWeChat;
@@ -196,7 +206,8 @@
 		23A16E271E1B8E0B007CD73A /* Me */ = {
 			isa = PBXGroup;
 			children = (
-				23A16E4B1E1B9659007CD73A /* MeController.swift */,
+				23A2FCD31E1C90FF00517AC5 /* Controller */,
+				23A2FCD21E1C90F400517AC5 /* View */,
 			);
 			path = Me;
 			sourceTree = "<group>";
@@ -236,6 +247,7 @@
 			children = (
 				23A16E431E1B944C007CD73A /* TSUIImage+WeChat.swift */,
 				23A16E4D1E1BA9F3007CD73A /* UICollor+WeChat.swift */,
+				23A2FCDC1E1C96EA00517AC5 /* QKLog.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -270,15 +282,32 @@
 			path = Vendor;
 			sourceTree = "<group>";
 		};
-		23A16E381E1B9175007CD73A /* Supportting Files */ = {
+		23A2FCCD1E1C8BAD00517AC5 /* Supportting Files */ = {
 			isa = PBXGroup;
 			children = (
-				23A16E391E1B9175007CD73A /* Info.plist */,
-				23A16E3A1E1B9175007CD73A /* Notes.swift */,
-				23A16E3B1E1B9175007CD73A /* TSWeChat-Bridging-Header.h */,
+				23A2FCCE1E1C8BAD00517AC5 /* Info.plist */,
 			);
-			name = "Supportting Files";
-			path = "../../../Downloads/TSWeChat-master/TSWeChat/Supportting Files";
+			path = "Supportting Files";
+			sourceTree = "<group>";
+		};
+		23A2FCD21E1C90F400517AC5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				23A2FCD41E1C912200517AC5 /* TSMeAvatarTableViewCell.swift */,
+				23A2FCD51E1C912200517AC5 /* TSMeAvatarTableViewCell.xib */,
+				23A2FCD81E1C957B00517AC5 /* TSImageTextTableViewCell.swift */,
+				23A2FCD91E1C957B00517AC5 /* TSImageTextTableViewCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		23A2FCD31E1C90FF00517AC5 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23A16E4B1E1B9659007CD73A /* MeController.swift */,
+				23A2FCD01E1C8E2300517AC5 /* MeController.xib */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 		4796A531E64BE99F137694AA /* Pods */ = {
@@ -410,6 +439,10 @@
 			files = (
 				23A16E321E1B8F0C007CD73A /* Assets.xcassets in Resources */,
 				23A16E501E1BAFB3007CD73A /* Media.xcassets in Resources */,
+				23A2FCCF1E1C8BAD00517AC5 /* Info.plist in Resources */,
+				23A2FCDB1E1C957B00517AC5 /* TSImageTextTableViewCell.xib in Resources */,
+				23A2FCD11E1C8E2300517AC5 /* MeController.xib in Resources */,
+				23A2FCD71E1C912200517AC5 /* TSMeAvatarTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -487,10 +520,12 @@
 				23A16E441E1B944C007CD73A /* TSUIImage+WeChat.swift in Sources */,
 				23A16DF01E1B884D007CD73A /* AppDelegate.swift in Sources */,
 				23A16E481E1B9627007CD73A /* ConstactsController.swift in Sources */,
+				23A2FCDA1E1C957B00517AC5 /* TSImageTextTableViewCell.swift in Sources */,
+				23A2FCD61E1C912200517AC5 /* TSMeAvatarTableViewCell.swift in Sources */,
 				23A16E461E1B9608007CD73A /* MessageController.swift in Sources */,
+				23A2FCDD1E1C96EA00517AC5 /* QKLog.swift in Sources */,
 				23A16E4A1E1B9642007CD73A /* DiscoverController.swift in Sources */,
 				23A16E4E1E1BA9F3007CD73A /* UICollor+WeChat.swift in Sources */,
-				23A16E3D1E1B9175007CD73A /* Notes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
