@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		235CCE9C1E1E1E9200C55ED3 /* DiscoverController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235CCE9B1E1E1E9200C55ED3 /* DiscoverController.xib */; };
+		235CCE9E1E1E227C00C55ED3 /* Kenny.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 235CCE9D1E1E227C00C55ED3 /* Kenny.jpg */; };
 		23A16DF01E1B884D007CD73A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16DEF1E1B884D007CD73A /* AppDelegate.swift */; };
 		23A16E051E1B884D007CD73A /* SWeChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16E041E1B884D007CD73A /* SWeChatTests.swift */; };
 		23A16E101E1B884D007CD73A /* SWeChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16E0F1E1B884D007CD73A /* SWeChatUITests.swift */; };
@@ -60,6 +62,8 @@
 
 /* Begin PBXFileReference section */
 		03996E874CF1D5276B420E2E /* Pods_SWeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		235CCE9B1E1E1E9200C55ED3 /* DiscoverController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverController.xib; sourceTree = "<group>"; };
+		235CCE9D1E1E227C00C55ED3 /* Kenny.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kenny.jpg; sourceTree = "<group>"; };
 		23A16DEC1E1B884D007CD73A /* SWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A16DEF1E1B884D007CD73A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23A16E001E1B884D007CD73A /* SWeChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWeChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -226,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				23A16E491E1B9642007CD73A /* DiscoverController.swift */,
+				235CCE9B1E1E1E9200C55ED3 /* DiscoverController.xib */,
 			);
 			path = Discover;
 			sourceTree = "<group>";
@@ -298,6 +303,7 @@
 		23A16E2F1E1B8E4D007CD73A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				235CCE9D1E1E227C00C55ED3 /* Kenny.jpg */,
 				23A2FCF01E1CEE1800517AC5 /* JSON */,
 				23A16E4F1E1BAFB3007CD73A /* Media.xcassets */,
 				23A16E311E1B8F0C007CD73A /* Assets.xcassets */,
@@ -521,6 +527,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23A2FCF51E1CEE1800517AC5 /* chat.json in Resources */,
+				235CCE9C1E1E1E9200C55ED3 /* DiscoverController.xib in Resources */,
 				23A2FCE71E1CCD4500517AC5 /* ConstactsController.xib in Resources */,
 				23A16E321E1B8F0C007CD73A /* Assets.xcassets in Resources */,
 				23A16E501E1BAFB3007CD73A /* Media.xcassets in Resources */,
@@ -528,6 +535,7 @@
 				23A2FCDB1E1C957B00517AC5 /* TSImageTextTableViewCell.xib in Resources */,
 				23A2FCF71E1CEE1800517AC5 /* message.json in Resources */,
 				23A2FCF81E1CEE1800517AC5 /* moments.json in Resources */,
+				235CCE9E1E1E227C00C55ED3 /* Kenny.jpg in Resources */,
 				23A2FCF61E1CEE1800517AC5 /* contact.json in Resources */,
 				23A2FCD11E1C8E2300517AC5 /* MeController.xib in Resources */,
 				23A2FCED1E1CD1B400517AC5 /* QKConstactCell.xib in Resources */,
