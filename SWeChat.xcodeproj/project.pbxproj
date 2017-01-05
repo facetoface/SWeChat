@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		235CCE9C1E1E1E9200C55ED3 /* DiscoverController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235CCE9B1E1E1E9200C55ED3 /* DiscoverController.xib */; };
 		235CCE9E1E1E227C00C55ED3 /* Kenny.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 235CCE9D1E1E227C00C55ED3 /* Kenny.jpg */; };
+		235CCEA01E1E2C2C00C55ED3 /* MessageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235CCE9F1E1E2C2C00C55ED3 /* MessageController.xib */; };
+		235CCEA21E1E2CE700C55ED3 /* QKMessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235CCEA11E1E2CE700C55ED3 /* QKMessageModel.swift */; };
+		235CCEA41E1E301000C55ED3 /* QKModelTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235CCEA31E1E301000C55ED3 /* QKModelTransformer.swift */; };
+		235CCEA61E1E330F00C55ED3 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235CCEA51E1E330F00C55ED3 /* NSDate+Extension.swift */; };
+		235CCEA81E1E411400C55ED3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235CCEA71E1E411400C55ED3 /* CoreLocation.framework */; };
 		23A16DF01E1B884D007CD73A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16DEF1E1B884D007CD73A /* AppDelegate.swift */; };
 		23A16E051E1B884D007CD73A /* SWeChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16E041E1B884D007CD73A /* SWeChatTests.swift */; };
 		23A16E101E1B884D007CD73A /* SWeChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16E0F1E1B884D007CD73A /* SWeChatUITests.swift */; };
@@ -64,6 +69,11 @@
 		03996E874CF1D5276B420E2E /* Pods_SWeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		235CCE9B1E1E1E9200C55ED3 /* DiscoverController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverController.xib; sourceTree = "<group>"; };
 		235CCE9D1E1E227C00C55ED3 /* Kenny.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kenny.jpg; sourceTree = "<group>"; };
+		235CCE9F1E1E2C2C00C55ED3 /* MessageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageController.xib; sourceTree = "<group>"; };
+		235CCEA11E1E2CE700C55ED3 /* QKMessageModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKMessageModel.swift; sourceTree = "<group>"; };
+		235CCEA31E1E301000C55ED3 /* QKModelTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKModelTransformer.swift; sourceTree = "<group>"; };
+		235CCEA51E1E330F00C55ED3 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
+		235CCEA71E1E411400C55ED3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		23A16DEC1E1B884D007CD73A /* SWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A16DEF1E1B884D007CD73A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23A16E001E1B884D007CD73A /* SWeChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWeChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -108,6 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				235CCEA81E1E411400C55ED3 /* CoreLocation.framework in Frameworks */,
 				C75E9317DD78DC99609B7EFF /* Pods_SWeChat.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -248,6 +259,7 @@
 			isa = PBXGroup;
 			children = (
 				23A16E451E1B9608007CD73A /* MessageController.swift */,
+				235CCE9F1E1E2C2C00C55ED3 /* MessageController.xib */,
 			);
 			path = Message;
 			sourceTree = "<group>";
@@ -289,6 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				23A2FCF91E1CF1F300517AC5 /* NSDictionary+Extension.swift */,
+				235CCEA51E1E330F00C55ED3 /* NSDate+Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -366,6 +379,8 @@
 			children = (
 				23A2FCE11E1CC38000517AC5 /* QKContactModel.swift */,
 				23A2FCE31E1CC4F200517AC5 /* QKModel.swift */,
+				235CCEA11E1E2CE700C55ED3 /* QKMessageModel.swift */,
+				235CCEA31E1E301000C55ED3 /* QKModelTransformer.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -411,6 +426,7 @@
 		88DFD418E3D41E5C260FA23E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				235CCEA71E1E411400C55ED3 /* CoreLocation.framework */,
 				03996E874CF1D5276B420E2E /* Pods_SWeChat.framework */,
 			);
 			name = Frameworks;
@@ -538,6 +554,7 @@
 				235CCE9E1E1E227C00C55ED3 /* Kenny.jpg in Resources */,
 				23A2FCF61E1CEE1800517AC5 /* contact.json in Resources */,
 				23A2FCD11E1C8E2300517AC5 /* MeController.xib in Resources */,
+				235CCEA01E1E2C2C00C55ED3 /* MessageController.xib in Resources */,
 				23A2FCED1E1CD1B400517AC5 /* QKConstactCell.xib in Resources */,
 				23A2FCD71E1C912200517AC5 /* TSMeAvatarTableViewCell.xib in Resources */,
 			);
@@ -615,6 +632,7 @@
 				23A16E4C1E1B9659007CD73A /* MeController.swift in Sources */,
 				23A16E421E1B936A007CD73A /* QKMainTabController.swift in Sources */,
 				23A16E441E1B944C007CD73A /* TSUIImage+WeChat.swift in Sources */,
+				235CCEA41E1E301000C55ED3 /* QKModelTransformer.swift in Sources */,
 				23A16DF01E1B884D007CD73A /* AppDelegate.swift in Sources */,
 				23A16E481E1B9627007CD73A /* ConstactsController.swift in Sources */,
 				23A2FCDA1E1C957B00517AC5 /* TSImageTextTableViewCell.swift in Sources */,
@@ -622,8 +640,10 @@
 				23A2FCD61E1C912200517AC5 /* TSMeAvatarTableViewCell.swift in Sources */,
 				23A16E461E1B9608007CD73A /* MessageController.swift in Sources */,
 				23A2FCE21E1CC38000517AC5 /* QKContactModel.swift in Sources */,
+				235CCEA21E1E2CE700C55ED3 /* QKMessageModel.swift in Sources */,
 				23A2FCE41E1CC4F200517AC5 /* QKModel.swift in Sources */,
 				23A2FCEC1E1CD1B400517AC5 /* QKConstactCell.swift in Sources */,
+				235CCEA61E1E330F00C55ED3 /* NSDate+Extension.swift in Sources */,
 				23A2FCEF1E1CD68F00517AC5 /* QKImageView+WebChat.swift in Sources */,
 				23A2FCDD1E1C96EA00517AC5 /* QKLog.swift in Sources */,
 				23A16E4A1E1B9642007CD73A /* DiscoverController.swift in Sources */,
