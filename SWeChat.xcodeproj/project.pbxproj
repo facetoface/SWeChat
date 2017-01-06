@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23417A381E1F2D3200A1DA34 /* QKMessageActionFloatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23417A371E1F2D3200A1DA34 /* QKMessageActionFloatView.swift */; };
+		23417A3B1E1F471800A1DA34 /* QKMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23417A391E1F471800A1DA34 /* QKMessageCell.swift */; };
+		23417A3C1E1F471800A1DA34 /* QKMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23417A3A1E1F471800A1DA34 /* QKMessageCell.xib */; };
+		23417A3E1E1F739200A1DA34 /* UIBarButtonItem+Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23417A3D1E1F739200A1DA34 /* UIBarButtonItem+Block.swift */; };
 		235CCE9C1E1E1E9200C55ED3 /* DiscoverController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235CCE9B1E1E1E9200C55ED3 /* DiscoverController.xib */; };
 		235CCE9E1E1E227C00C55ED3 /* Kenny.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 235CCE9D1E1E227C00C55ED3 /* Kenny.jpg */; };
 		235CCEA01E1E2C2C00C55ED3 /* MessageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235CCE9F1E1E2C2C00C55ED3 /* MessageController.xib */; };
@@ -67,6 +71,10 @@
 
 /* Begin PBXFileReference section */
 		03996E874CF1D5276B420E2E /* Pods_SWeChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SWeChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		23417A371E1F2D3200A1DA34 /* QKMessageActionFloatView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKMessageActionFloatView.swift; sourceTree = "<group>"; };
+		23417A391E1F471800A1DA34 /* QKMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKMessageCell.swift; sourceTree = "<group>"; };
+		23417A3A1E1F471800A1DA34 /* QKMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKMessageCell.xib; sourceTree = "<group>"; };
+		23417A3D1E1F739200A1DA34 /* UIBarButtonItem+Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Block.swift"; sourceTree = "<group>"; };
 		235CCE9B1E1E1E9200C55ED3 /* DiscoverController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverController.xib; sourceTree = "<group>"; };
 		235CCE9D1E1E227C00C55ED3 /* Kenny.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kenny.jpg; sourceTree = "<group>"; };
 		235CCE9F1E1E2C2C00C55ED3 /* MessageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageController.xib; sourceTree = "<group>"; };
@@ -140,6 +148,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		23417A361E1F2D1400A1DA34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				23417A371E1F2D3200A1DA34 /* QKMessageActionFloatView.swift */,
+				23417A391E1F471800A1DA34 /* QKMessageCell.swift */,
+				23417A3A1E1F471800A1DA34 /* QKMessageCell.xib */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
 		23A16DE31E1B884D007CD73A = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +276,7 @@
 		23A16E281E1B8E0B007CD73A /* Message */ = {
 			isa = PBXGroup;
 			children = (
+				23417A361E1F2D1400A1DA34 /* View */,
 				23A16E451E1B9608007CD73A /* MessageController.swift */,
 				235CCE9F1E1E2C2C00C55ED3 /* MessageController.xib */,
 			);
@@ -302,6 +321,7 @@
 			children = (
 				23A2FCF91E1CF1F300517AC5 /* NSDictionary+Extension.swift */,
 				235CCEA51E1E330F00C55ED3 /* NSDate+Extension.swift */,
+				23417A3D1E1F739200A1DA34 /* UIBarButtonItem+Block.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -545,6 +565,7 @@
 				23A2FCF51E1CEE1800517AC5 /* chat.json in Resources */,
 				235CCE9C1E1E1E9200C55ED3 /* DiscoverController.xib in Resources */,
 				23A2FCE71E1CCD4500517AC5 /* ConstactsController.xib in Resources */,
+				23417A3C1E1F471800A1DA34 /* QKMessageCell.xib in Resources */,
 				23A16E321E1B8F0C007CD73A /* Assets.xcassets in Resources */,
 				23A16E501E1BAFB3007CD73A /* Media.xcassets in Resources */,
 				23A2FCCF1E1C8BAD00517AC5 /* Info.plist in Resources */,
@@ -630,6 +651,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23A16E4C1E1B9659007CD73A /* MeController.swift in Sources */,
+				23417A381E1F2D3200A1DA34 /* QKMessageActionFloatView.swift in Sources */,
 				23A16E421E1B936A007CD73A /* QKMainTabController.swift in Sources */,
 				23A16E441E1B944C007CD73A /* TSUIImage+WeChat.swift in Sources */,
 				235CCEA41E1E301000C55ED3 /* QKModelTransformer.swift in Sources */,
@@ -643,8 +665,10 @@
 				235CCEA21E1E2CE700C55ED3 /* QKMessageModel.swift in Sources */,
 				23A2FCE41E1CC4F200517AC5 /* QKModel.swift in Sources */,
 				23A2FCEC1E1CD1B400517AC5 /* QKConstactCell.swift in Sources */,
+				23417A3B1E1F471800A1DA34 /* QKMessageCell.swift in Sources */,
 				235CCEA61E1E330F00C55ED3 /* NSDate+Extension.swift in Sources */,
 				23A2FCEF1E1CD68F00517AC5 /* QKImageView+WebChat.swift in Sources */,
+				23417A3E1E1F739200A1DA34 /* UIBarButtonItem+Block.swift in Sources */,
 				23A2FCDD1E1C96EA00517AC5 /* QKLog.swift in Sources */,
 				23A16E4A1E1B9642007CD73A /* DiscoverController.swift in Sources */,
 				23A16E4E1E1BA9F3007CD73A /* UICollor+WeChat.swift in Sources */,
