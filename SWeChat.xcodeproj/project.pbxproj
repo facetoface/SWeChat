@@ -166,6 +166,22 @@
 			name = View;
 			sourceTree = "<group>";
 		};
+		23417A471E1FA1FA00A1DA34 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		23417A481E1FA1FF00A1DA34 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23417A3F1E1F98FF00A1DA34 /* QKChatViewController.swift */,
+				23417A401E1F98FF00A1DA34 /* QKChatViewController.xib */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
 		23A16DE31E1B884D007CD73A = {
 			isa = PBXGroup;
 			children = (
@@ -241,8 +257,8 @@
 		23A16E231E1B8E0B007CD73A /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				23417A3F1E1F98FF00A1DA34 /* QKChatViewController.swift */,
-				23417A401E1F98FF00A1DA34 /* QKChatViewController.xib */,
+				23417A481E1FA1FF00A1DA34 /* Controller */,
+				23417A471E1FA1FA00A1DA34 /* View */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
