@@ -11,6 +11,10 @@
 		23417A3B1E1F471800A1DA34 /* QKMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23417A391E1F471800A1DA34 /* QKMessageCell.swift */; };
 		23417A3C1E1F471800A1DA34 /* QKMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23417A3A1E1F471800A1DA34 /* QKMessageCell.xib */; };
 		23417A3E1E1F739200A1DA34 /* UIBarButtonItem+Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23417A3D1E1F739200A1DA34 /* UIBarButtonItem+Block.swift */; };
+		23417A411E1F98FF00A1DA34 /* QKChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23417A3F1E1F98FF00A1DA34 /* QKChatViewController.swift */; };
+		23417A421E1F98FF00A1DA34 /* QKChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23417A401E1F98FF00A1DA34 /* QKChatViewController.xib */; };
+		23417A441E1F9B0800A1DA34 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23417A431E1F9B0800A1DA34 /* UIViewController+Extension.swift */; };
+		23417A461E1F9B6C00A1DA34 /* NSObject+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23417A451E1F9B6C00A1DA34 /* NSObject+String.swift */; };
 		235CCE9C1E1E1E9200C55ED3 /* DiscoverController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235CCE9B1E1E1E9200C55ED3 /* DiscoverController.xib */; };
 		235CCE9E1E1E227C00C55ED3 /* Kenny.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 235CCE9D1E1E227C00C55ED3 /* Kenny.jpg */; };
 		235CCEA01E1E2C2C00C55ED3 /* MessageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235CCE9F1E1E2C2C00C55ED3 /* MessageController.xib */; };
@@ -75,6 +79,10 @@
 		23417A391E1F471800A1DA34 /* QKMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKMessageCell.swift; sourceTree = "<group>"; };
 		23417A3A1E1F471800A1DA34 /* QKMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKMessageCell.xib; sourceTree = "<group>"; };
 		23417A3D1E1F739200A1DA34 /* UIBarButtonItem+Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Block.swift"; sourceTree = "<group>"; };
+		23417A3F1E1F98FF00A1DA34 /* QKChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatViewController.swift; sourceTree = "<group>"; };
+		23417A401E1F98FF00A1DA34 /* QKChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKChatViewController.xib; sourceTree = "<group>"; };
+		23417A431E1F9B0800A1DA34 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		23417A451E1F9B6C00A1DA34 /* NSObject+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+String.swift"; sourceTree = "<group>"; };
 		235CCE9B1E1E1E9200C55ED3 /* DiscoverController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverController.xib; sourceTree = "<group>"; };
 		235CCE9D1E1E227C00C55ED3 /* Kenny.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kenny.jpg; sourceTree = "<group>"; };
 		235CCE9F1E1E2C2C00C55ED3 /* MessageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageController.xib; sourceTree = "<group>"; };
@@ -233,6 +241,8 @@
 		23A16E231E1B8E0B007CD73A /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				23417A3F1E1F98FF00A1DA34 /* QKChatViewController.swift */,
+				23417A401E1F98FF00A1DA34 /* QKChatViewController.xib */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -322,6 +332,8 @@
 				23A2FCF91E1CF1F300517AC5 /* NSDictionary+Extension.swift */,
 				235CCEA51E1E330F00C55ED3 /* NSDate+Extension.swift */,
 				23417A3D1E1F739200A1DA34 /* UIBarButtonItem+Block.swift */,
+				23417A431E1F9B0800A1DA34 /* UIViewController+Extension.swift */,
+				23417A451E1F9B6C00A1DA34 /* NSObject+String.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -576,6 +588,7 @@
 				23A2FCF61E1CEE1800517AC5 /* contact.json in Resources */,
 				23A2FCD11E1C8E2300517AC5 /* MeController.xib in Resources */,
 				235CCEA01E1E2C2C00C55ED3 /* MessageController.xib in Resources */,
+				23417A421E1F98FF00A1DA34 /* QKChatViewController.xib in Resources */,
 				23A2FCED1E1CD1B400517AC5 /* QKConstactCell.xib in Resources */,
 				23A2FCD71E1C912200517AC5 /* TSMeAvatarTableViewCell.xib in Resources */,
 			);
@@ -650,8 +663,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23417A441E1F9B0800A1DA34 /* UIViewController+Extension.swift in Sources */,
 				23A16E4C1E1B9659007CD73A /* MeController.swift in Sources */,
 				23417A381E1F2D3200A1DA34 /* QKMessageActionFloatView.swift in Sources */,
+				23417A411E1F98FF00A1DA34 /* QKChatViewController.swift in Sources */,
+				23417A461E1F9B6C00A1DA34 /* NSObject+String.swift in Sources */,
 				23A16E421E1B936A007CD73A /* QKMainTabController.swift in Sources */,
 				23A16E441E1B944C007CD73A /* TSUIImage+WeChat.swift in Sources */,
 				235CCEA41E1E301000C55ED3 /* QKModelTransformer.swift in Sources */,
