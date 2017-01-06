@@ -15,6 +15,7 @@
 		23417A421E1F98FF00A1DA34 /* QKChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23417A401E1F98FF00A1DA34 /* QKChatViewController.xib */; };
 		23417A441E1F9B0800A1DA34 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23417A431E1F9B0800A1DA34 /* UIViewController+Extension.swift */; };
 		23417A461E1F9B6C00A1DA34 /* NSObject+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23417A451E1F9B6C00A1DA34 /* NSObject+String.swift */; };
+		23417A4A1E1FA4B700A1DA34 /* QKChatActionBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23417A491E1FA4B700A1DA34 /* QKChatActionBarView.swift */; };
 		235CCE9C1E1E1E9200C55ED3 /* DiscoverController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235CCE9B1E1E1E9200C55ED3 /* DiscoverController.xib */; };
 		235CCE9E1E1E227C00C55ED3 /* Kenny.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 235CCE9D1E1E227C00C55ED3 /* Kenny.jpg */; };
 		235CCEA01E1E2C2C00C55ED3 /* MessageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235CCE9F1E1E2C2C00C55ED3 /* MessageController.xib */; };
@@ -83,6 +84,7 @@
 		23417A401E1F98FF00A1DA34 /* QKChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKChatViewController.xib; sourceTree = "<group>"; };
 		23417A431E1F9B0800A1DA34 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		23417A451E1F9B6C00A1DA34 /* NSObject+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+String.swift"; sourceTree = "<group>"; };
+		23417A491E1FA4B700A1DA34 /* QKChatActionBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatActionBarView.swift; sourceTree = "<group>"; };
 		235CCE9B1E1E1E9200C55ED3 /* DiscoverController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverController.xib; sourceTree = "<group>"; };
 		235CCE9D1E1E227C00C55ED3 /* Kenny.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kenny.jpg; sourceTree = "<group>"; };
 		235CCE9F1E1E2C2C00C55ED3 /* MessageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageController.xib; sourceTree = "<group>"; };
@@ -169,6 +171,7 @@
 		23417A471E1FA1FA00A1DA34 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				23417A491E1FA4B700A1DA34 /* QKChatActionBarView.swift */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -689,6 +692,7 @@
 				235CCEA41E1E301000C55ED3 /* QKModelTransformer.swift in Sources */,
 				23A16DF01E1B884D007CD73A /* AppDelegate.swift in Sources */,
 				23A16E481E1B9627007CD73A /* ConstactsController.swift in Sources */,
+				23417A4A1E1FA4B700A1DA34 /* QKChatActionBarView.swift in Sources */,
 				23A2FCDA1E1C957B00517AC5 /* TSImageTextTableViewCell.swift in Sources */,
 				23A2FCFA1E1CF1F300517AC5 /* NSDictionary+Extension.swift in Sources */,
 				23A2FCD61E1C912200517AC5 /* TSMeAvatarTableViewCell.swift in Sources */,
