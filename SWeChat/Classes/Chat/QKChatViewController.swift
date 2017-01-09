@@ -27,7 +27,7 @@ class QKChatViewController: UIViewController {
     var chatActionBarView: QKChatActionBarView!
     var actionBarPaddingBottomConstraint: Constraint?
     var keyboardHeightConstraint: NSLayoutConstraint?
-    var emotionInputeView: UIView!
+    var emotionInputeView: QKChatEmotionInputView!
     
     
     override func viewDidLoad() {
