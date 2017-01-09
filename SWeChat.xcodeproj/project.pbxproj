@@ -25,6 +25,13 @@
 		2362E2B31E2324AF00CAA3E2 /* QKChatActionBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2362E2B21E2324AF00CAA3E2 /* QKChatActionBarView.swift */; };
 		2362E2B51E2324D400CAA3E2 /* QKChatActionBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2362E2B41E2324D400CAA3E2 /* QKChatActionBarView.xib */; };
 		2362E2B71E23288200CAA3E2 /* QKChatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2362E2B61E23288200CAA3E2 /* QKChatButton.swift */; };
+		2362E2B91E23609700CAA3E2 /* QKChatEmotionInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2362E2B81E23609700CAA3E2 /* QKChatEmotionInputView.swift */; };
+		2362E2BB1E2360A600CAA3E2 /* TSChatEmotionInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2362E2BA1E2360A600CAA3E2 /* TSChatEmotionInputView.xib */; };
+		2362E2BD1E23639B00CAA3E2 /* QKChatEmotionScollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2362E2BC1E23639B00CAA3E2 /* QKChatEmotionScollView.swift */; };
+		2362E2C01E2365FA00CAA3E2 /* QKChatEmotionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2362E2BE1E2365FA00CAA3E2 /* QKChatEmotionCell.swift */; };
+		2362E2C11E2365FA00CAA3E2 /* QKChatEmotionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2362E2BF1E2365FA00CAA3E2 /* QKChatEmotionCell.xib */; };
+		2362E2C31E23687100CAA3E2 /* QKConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2362E2C21E23687100CAA3E2 /* QKConfig.swift */; };
+		2362E2C51E236CB900CAA3E2 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2362E2C41E236CB900CAA3E2 /* UIView+Frame.swift */; };
 		23A16DF01E1B884D007CD73A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16DEF1E1B884D007CD73A /* AppDelegate.swift */; };
 		23A16E051E1B884D007CD73A /* SWeChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16E041E1B884D007CD73A /* SWeChatTests.swift */; };
 		23A16E101E1B884D007CD73A /* SWeChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16E0F1E1B884D007CD73A /* SWeChatUITests.swift */; };
@@ -96,6 +103,13 @@
 		2362E2B21E2324AF00CAA3E2 /* QKChatActionBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatActionBarView.swift; sourceTree = "<group>"; };
 		2362E2B41E2324D400CAA3E2 /* QKChatActionBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKChatActionBarView.xib; sourceTree = "<group>"; };
 		2362E2B61E23288200CAA3E2 /* QKChatButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatButton.swift; sourceTree = "<group>"; };
+		2362E2B81E23609700CAA3E2 /* QKChatEmotionInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatEmotionInputView.swift; sourceTree = "<group>"; };
+		2362E2BA1E2360A600CAA3E2 /* TSChatEmotionInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSChatEmotionInputView.xib; sourceTree = "<group>"; };
+		2362E2BC1E23639B00CAA3E2 /* QKChatEmotionScollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatEmotionScollView.swift; sourceTree = "<group>"; };
+		2362E2BE1E2365FA00CAA3E2 /* QKChatEmotionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatEmotionCell.swift; sourceTree = "<group>"; };
+		2362E2BF1E2365FA00CAA3E2 /* QKChatEmotionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKChatEmotionCell.xib; sourceTree = "<group>"; };
+		2362E2C21E23687100CAA3E2 /* QKConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKConfig.swift; sourceTree = "<group>"; };
+		2362E2C41E236CB900CAA3E2 /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
 		23A16DEC1E1B884D007CD73A /* SWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A16DEF1E1B884D007CD73A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23A16E001E1B884D007CD73A /* SWeChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWeChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -178,6 +192,11 @@
 				2362E2B21E2324AF00CAA3E2 /* QKChatActionBarView.swift */,
 				2362E2B41E2324D400CAA3E2 /* QKChatActionBarView.xib */,
 				2362E2B61E23288200CAA3E2 /* QKChatButton.swift */,
+				2362E2B81E23609700CAA3E2 /* QKChatEmotionInputView.swift */,
+				2362E2BA1E2360A600CAA3E2 /* TSChatEmotionInputView.xib */,
+				2362E2BC1E23639B00CAA3E2 /* QKChatEmotionScollView.swift */,
+				2362E2BE1E2365FA00CAA3E2 /* QKChatEmotionCell.swift */,
+				2362E2BF1E2365FA00CAA3E2 /* QKChatEmotionCell.xib */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -359,6 +378,7 @@
 				23417A3D1E1F739200A1DA34 /* UIBarButtonItem+Block.swift */,
 				23417A431E1F9B0800A1DA34 /* UIViewController+Extension.swift */,
 				23417A451E1F9B6C00A1DA34 /* NSObject+String.swift */,
+				2362E2C41E236CB900CAA3E2 /* UIView+Frame.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -366,6 +386,7 @@
 		23A16E2E1E1B8E3D007CD73A /* Mascro */ = {
 			isa = PBXGroup;
 			children = (
+				2362E2C21E23687100CAA3E2 /* QKConfig.swift */,
 			);
 			path = Mascro;
 			sourceTree = "<group>";
@@ -600,6 +621,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23A2FCF51E1CEE1800517AC5 /* chat.json in Resources */,
+				2362E2C11E2365FA00CAA3E2 /* QKChatEmotionCell.xib in Resources */,
 				235CCE9C1E1E1E9200C55ED3 /* DiscoverController.xib in Resources */,
 				23A2FCE71E1CCD4500517AC5 /* ConstactsController.xib in Resources */,
 				23417A3C1E1F471800A1DA34 /* QKMessageCell.xib in Resources */,
@@ -617,6 +639,7 @@
 				23417A421E1F98FF00A1DA34 /* QKChatViewController.xib in Resources */,
 				23A2FCED1E1CD1B400517AC5 /* QKConstactCell.xib in Resources */,
 				23A2FCD71E1C912200517AC5 /* TSMeAvatarTableViewCell.xib in Resources */,
+				2362E2BB1E2360A600CAA3E2 /* TSChatEmotionInputView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,12 +712,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2362E2C31E23687100CAA3E2 /* QKConfig.swift in Sources */,
 				23417A441E1F9B0800A1DA34 /* UIViewController+Extension.swift in Sources */,
 				23A16E4C1E1B9659007CD73A /* MeController.swift in Sources */,
 				23417A381E1F2D3200A1DA34 /* QKMessageActionFloatView.swift in Sources */,
 				23417A411E1F98FF00A1DA34 /* QKChatViewController.swift in Sources */,
 				23417A461E1F9B6C00A1DA34 /* NSObject+String.swift in Sources */,
+				2362E2B91E23609700CAA3E2 /* QKChatEmotionInputView.swift in Sources */,
 				23A16E421E1B936A007CD73A /* QKMainTabController.swift in Sources */,
+				2362E2C01E2365FA00CAA3E2 /* QKChatEmotionCell.swift in Sources */,
 				23A16E441E1B944C007CD73A /* TSUIImage+WeChat.swift in Sources */,
 				235CCEA41E1E301000C55ED3 /* QKModelTransformer.swift in Sources */,
 				23A16DF01E1B884D007CD73A /* AppDelegate.swift in Sources */,
@@ -712,7 +738,9 @@
 				23417A3B1E1F471800A1DA34 /* QKMessageCell.swift in Sources */,
 				235CCEA61E1E330F00C55ED3 /* NSDate+Extension.swift in Sources */,
 				23A2FCEF1E1CD68F00517AC5 /* QKImageView+WebChat.swift in Sources */,
+				2362E2BD1E23639B00CAA3E2 /* QKChatEmotionScollView.swift in Sources */,
 				23417A3E1E1F739200A1DA34 /* UIBarButtonItem+Block.swift in Sources */,
+				2362E2C51E236CB900CAA3E2 /* UIView+Frame.swift in Sources */,
 				23A2FCDD1E1C96EA00517AC5 /* QKLog.swift in Sources */,
 				23A16E4A1E1B9642007CD73A /* DiscoverController.swift in Sources */,
 				23A16E4E1E1BA9F3007CD73A /* UICollor+WeChat.swift in Sources */,

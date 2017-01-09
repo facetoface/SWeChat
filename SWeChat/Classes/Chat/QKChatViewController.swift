@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import SnapKit
+
 
 class QKChatViewController: UIViewController {
     var messageModel: MessageModel?
@@ -21,6 +23,11 @@ class QKChatViewController: UIViewController {
         listTableView.backgroundView = UIImageView(image: TSAsset.Chat_background.image)
         return listTableView
     }()
+    
+    var chatActionBarView: QKChatActionBarView!
+    var actionBarPaddingBottomConstraint: Constraint?
+    var keyboardHeightConstraint: NSLayoutConstraint?
+    var emotionInputeView: UIView!
     
     
     override func viewDidLoad() {
