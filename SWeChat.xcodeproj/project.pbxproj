@@ -11,15 +11,27 @@
 		23417A3B1E1F471800A1DA34 /* QKMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23417A391E1F471800A1DA34 /* QKMessageCell.swift */; };
 		23417A3C1E1F471800A1DA34 /* QKMessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23417A3A1E1F471800A1DA34 /* QKMessageCell.xib */; };
 		23417A3E1E1F739200A1DA34 /* UIBarButtonItem+Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23417A3D1E1F739200A1DA34 /* UIBarButtonItem+Block.swift */; };
-		23417A411E1F98FF00A1DA34 /* QKChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23417A3F1E1F98FF00A1DA34 /* QKChatViewController.swift */; };
-		23417A421E1F98FF00A1DA34 /* QKChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 23417A401E1F98FF00A1DA34 /* QKChatViewController.xib */; };
 		23417A441E1F9B0800A1DA34 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23417A431E1F9B0800A1DA34 /* UIViewController+Extension.swift */; };
 		23417A461E1F9B6C00A1DA34 /* NSObject+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23417A451E1F9B6C00A1DA34 /* NSObject+String.swift */; };
 		235B236D1E246DC300980642 /* QKFullyHorizontalFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B236C1E246DC300980642 /* QKFullyHorizontalFlowLayout.swift */; };
-		235B23701E247F4100980642 /* QKChatShareMoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B236E1E247F4100980642 /* QKChatShareMoreCollectionViewCell.swift */; };
-		235B23711E247F4100980642 /* QKChatShareMoreCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235B236F1E247F4100980642 /* QKChatShareMoreCollectionViewCell.xib */; };
-		235B23731E24AA1F00980642 /* QKChatVoiceIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B23721E24AA1F00980642 /* QKChatVoiceIndicatorView.swift */; };
-		235B23751E24AA3200980642 /* QKChatVoiceIndicatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235B23741E24AA3200980642 /* QKChatVoiceIndicatorView.xib */; };
+		235B237B1E24CBFF00980642 /* QKChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B237A1E24CBFF00980642 /* QKChatModel.swift */; };
+		235B237D1E24CD0A00980642 /* QKChatSubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B237C1E24CD0A00980642 /* QKChatSubModel.swift */; };
+		235B23921E24E46500980642 /* QKChatEmotionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B237F1E24E46500980642 /* QKChatEmotionCell.swift */; };
+		235B23931E24E46500980642 /* QKChatEmotionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235B23801E24E46500980642 /* QKChatEmotionCell.xib */; };
+		235B23941E24E46500980642 /* QKChatShareMoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B23811E24E46500980642 /* QKChatShareMoreCollectionViewCell.swift */; };
+		235B23951E24E46500980642 /* QKChatShareMoreCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235B23821E24E46500980642 /* QKChatShareMoreCollectionViewCell.xib */; };
+		235B23961E24E46500980642 /* QKChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B23851E24E46500980642 /* QKChatViewController.swift */; };
+		235B23971E24E46500980642 /* QKChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235B23861E24E46500980642 /* QKChatViewController.xib */; };
+		235B23981E24E46500980642 /* QKChatActionBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B23881E24E46500980642 /* QKChatActionBarView.swift */; };
+		235B23991E24E46500980642 /* QKChatActionBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235B23891E24E46500980642 /* QKChatActionBarView.xib */; };
+		235B239A1E24E46500980642 /* QKChatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B238A1E24E46500980642 /* QKChatButton.swift */; };
+		235B239B1E24E46500980642 /* QKChatEmotionInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B238B1E24E46500980642 /* QKChatEmotionInputView.swift */; };
+		235B239C1E24E46500980642 /* QKChatEmotionScollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B238C1E24E46500980642 /* QKChatEmotionScollView.swift */; };
+		235B239D1E24E46500980642 /* QKChatShareMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B238D1E24E46500980642 /* QKChatShareMoreView.swift */; };
+		235B239E1E24E46500980642 /* QKChatShareMoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235B238E1E24E46500980642 /* QKChatShareMoreView.xib */; };
+		235B239F1E24E46500980642 /* QKChatVoiceIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B238F1E24E46500980642 /* QKChatVoiceIndicatorView.swift */; };
+		235B23A01E24E46500980642 /* QKChatVoiceIndicatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235B23901E24E46500980642 /* QKChatVoiceIndicatorView.xib */; };
+		235B23A11E24E46500980642 /* TSChatEmotionInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235B23911E24E46500980642 /* TSChatEmotionInputView.xib */; };
 		235CCE9C1E1E1E9200C55ED3 /* DiscoverController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235CCE9B1E1E1E9200C55ED3 /* DiscoverController.xib */; };
 		235CCE9E1E1E227C00C55ED3 /* Kenny.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 235CCE9D1E1E227C00C55ED3 /* Kenny.jpg */; };
 		235CCEA01E1E2C2C00C55ED3 /* MessageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235CCE9F1E1E2C2C00C55ED3 /* MessageController.xib */; };
@@ -27,18 +39,8 @@
 		235CCEA41E1E301000C55ED3 /* QKModelTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235CCEA31E1E301000C55ED3 /* QKModelTransformer.swift */; };
 		235CCEA61E1E330F00C55ED3 /* NSDate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235CCEA51E1E330F00C55ED3 /* NSDate+Extension.swift */; };
 		235CCEA81E1E411400C55ED3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235CCEA71E1E411400C55ED3 /* CoreLocation.framework */; };
-		2362E2B31E2324AF00CAA3E2 /* QKChatActionBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2362E2B21E2324AF00CAA3E2 /* QKChatActionBarView.swift */; };
-		2362E2B51E2324D400CAA3E2 /* QKChatActionBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2362E2B41E2324D400CAA3E2 /* QKChatActionBarView.xib */; };
-		2362E2B71E23288200CAA3E2 /* QKChatButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2362E2B61E23288200CAA3E2 /* QKChatButton.swift */; };
-		2362E2B91E23609700CAA3E2 /* QKChatEmotionInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2362E2B81E23609700CAA3E2 /* QKChatEmotionInputView.swift */; };
-		2362E2BB1E2360A600CAA3E2 /* TSChatEmotionInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2362E2BA1E2360A600CAA3E2 /* TSChatEmotionInputView.xib */; };
-		2362E2BD1E23639B00CAA3E2 /* QKChatEmotionScollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2362E2BC1E23639B00CAA3E2 /* QKChatEmotionScollView.swift */; };
-		2362E2C01E2365FA00CAA3E2 /* QKChatEmotionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2362E2BE1E2365FA00CAA3E2 /* QKChatEmotionCell.swift */; };
-		2362E2C11E2365FA00CAA3E2 /* QKChatEmotionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2362E2BF1E2365FA00CAA3E2 /* QKChatEmotionCell.xib */; };
 		2362E2C31E23687100CAA3E2 /* QKConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2362E2C21E23687100CAA3E2 /* QKConfig.swift */; };
 		2362E2C51E236CB900CAA3E2 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2362E2C41E236CB900CAA3E2 /* UIView+Frame.swift */; };
-		2362E2C71E23969A00CAA3E2 /* QKChatShareMoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2362E2C61E23969A00CAA3E2 /* QKChatShareMoreView.swift */; };
-		2362E2C91E2396A500CAA3E2 /* QKChatShareMoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2362E2C81E2396A500CAA3E2 /* QKChatShareMoreView.xib */; };
 		23A16DF01E1B884D007CD73A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16DEF1E1B884D007CD73A /* AppDelegate.swift */; };
 		23A16E051E1B884D007CD73A /* SWeChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16E041E1B884D007CD73A /* SWeChatTests.swift */; };
 		23A16E101E1B884D007CD73A /* SWeChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16E0F1E1B884D007CD73A /* SWeChatUITests.swift */; };
@@ -96,15 +98,27 @@
 		23417A391E1F471800A1DA34 /* QKMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKMessageCell.swift; sourceTree = "<group>"; };
 		23417A3A1E1F471800A1DA34 /* QKMessageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKMessageCell.xib; sourceTree = "<group>"; };
 		23417A3D1E1F739200A1DA34 /* UIBarButtonItem+Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Block.swift"; sourceTree = "<group>"; };
-		23417A3F1E1F98FF00A1DA34 /* QKChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatViewController.swift; sourceTree = "<group>"; };
-		23417A401E1F98FF00A1DA34 /* QKChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKChatViewController.xib; sourceTree = "<group>"; };
 		23417A431E1F9B0800A1DA34 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		23417A451E1F9B6C00A1DA34 /* NSObject+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+String.swift"; sourceTree = "<group>"; };
 		235B236C1E246DC300980642 /* QKFullyHorizontalFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKFullyHorizontalFlowLayout.swift; sourceTree = "<group>"; };
-		235B236E1E247F4100980642 /* QKChatShareMoreCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatShareMoreCollectionViewCell.swift; sourceTree = "<group>"; };
-		235B236F1E247F4100980642 /* QKChatShareMoreCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKChatShareMoreCollectionViewCell.xib; sourceTree = "<group>"; };
-		235B23721E24AA1F00980642 /* QKChatVoiceIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatVoiceIndicatorView.swift; sourceTree = "<group>"; };
-		235B23741E24AA3200980642 /* QKChatVoiceIndicatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKChatVoiceIndicatorView.xib; sourceTree = "<group>"; };
+		235B237A1E24CBFF00980642 /* QKChatModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatModel.swift; sourceTree = "<group>"; };
+		235B237C1E24CD0A00980642 /* QKChatSubModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatSubModel.swift; sourceTree = "<group>"; };
+		235B237F1E24E46500980642 /* QKChatEmotionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatEmotionCell.swift; sourceTree = "<group>"; };
+		235B23801E24E46500980642 /* QKChatEmotionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKChatEmotionCell.xib; sourceTree = "<group>"; };
+		235B23811E24E46500980642 /* QKChatShareMoreCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatShareMoreCollectionViewCell.swift; sourceTree = "<group>"; };
+		235B23821E24E46500980642 /* QKChatShareMoreCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKChatShareMoreCollectionViewCell.xib; sourceTree = "<group>"; };
+		235B23851E24E46500980642 /* QKChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatViewController.swift; sourceTree = "<group>"; };
+		235B23861E24E46500980642 /* QKChatViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKChatViewController.xib; sourceTree = "<group>"; };
+		235B23881E24E46500980642 /* QKChatActionBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatActionBarView.swift; sourceTree = "<group>"; };
+		235B23891E24E46500980642 /* QKChatActionBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKChatActionBarView.xib; sourceTree = "<group>"; };
+		235B238A1E24E46500980642 /* QKChatButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatButton.swift; sourceTree = "<group>"; };
+		235B238B1E24E46500980642 /* QKChatEmotionInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatEmotionInputView.swift; sourceTree = "<group>"; };
+		235B238C1E24E46500980642 /* QKChatEmotionScollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatEmotionScollView.swift; sourceTree = "<group>"; };
+		235B238D1E24E46500980642 /* QKChatShareMoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatShareMoreView.swift; sourceTree = "<group>"; };
+		235B238E1E24E46500980642 /* QKChatShareMoreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKChatShareMoreView.xib; sourceTree = "<group>"; };
+		235B238F1E24E46500980642 /* QKChatVoiceIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatVoiceIndicatorView.swift; sourceTree = "<group>"; };
+		235B23901E24E46500980642 /* QKChatVoiceIndicatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKChatVoiceIndicatorView.xib; sourceTree = "<group>"; };
+		235B23911E24E46500980642 /* TSChatEmotionInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSChatEmotionInputView.xib; sourceTree = "<group>"; };
 		235CCE9B1E1E1E9200C55ED3 /* DiscoverController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverController.xib; sourceTree = "<group>"; };
 		235CCE9D1E1E227C00C55ED3 /* Kenny.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kenny.jpg; sourceTree = "<group>"; };
 		235CCE9F1E1E2C2C00C55ED3 /* MessageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageController.xib; sourceTree = "<group>"; };
@@ -112,18 +126,8 @@
 		235CCEA31E1E301000C55ED3 /* QKModelTransformer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKModelTransformer.swift; sourceTree = "<group>"; };
 		235CCEA51E1E330F00C55ED3 /* NSDate+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSDate+Extension.swift"; sourceTree = "<group>"; };
 		235CCEA71E1E411400C55ED3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		2362E2B21E2324AF00CAA3E2 /* QKChatActionBarView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatActionBarView.swift; sourceTree = "<group>"; };
-		2362E2B41E2324D400CAA3E2 /* QKChatActionBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKChatActionBarView.xib; sourceTree = "<group>"; };
-		2362E2B61E23288200CAA3E2 /* QKChatButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatButton.swift; sourceTree = "<group>"; };
-		2362E2B81E23609700CAA3E2 /* QKChatEmotionInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatEmotionInputView.swift; sourceTree = "<group>"; };
-		2362E2BA1E2360A600CAA3E2 /* TSChatEmotionInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSChatEmotionInputView.xib; sourceTree = "<group>"; };
-		2362E2BC1E23639B00CAA3E2 /* QKChatEmotionScollView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatEmotionScollView.swift; sourceTree = "<group>"; };
-		2362E2BE1E2365FA00CAA3E2 /* QKChatEmotionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatEmotionCell.swift; sourceTree = "<group>"; };
-		2362E2BF1E2365FA00CAA3E2 /* QKChatEmotionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKChatEmotionCell.xib; sourceTree = "<group>"; };
 		2362E2C21E23687100CAA3E2 /* QKConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKConfig.swift; sourceTree = "<group>"; };
 		2362E2C41E236CB900CAA3E2 /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
-		2362E2C61E23969A00CAA3E2 /* QKChatShareMoreView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatShareMoreView.swift; sourceTree = "<group>"; };
-		2362E2C81E2396A500CAA3E2 /* QKChatShareMoreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKChatShareMoreView.xib; sourceTree = "<group>"; };
 		23A16DEC1E1B884D007CD73A /* SWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A16DEF1E1B884D007CD73A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23A16E001E1B884D007CD73A /* SWeChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWeChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -200,34 +204,48 @@
 			name = View;
 			sourceTree = "<group>";
 		};
-		23417A471E1FA1FA00A1DA34 /* View */ = {
+		235B237E1E24E46500980642 /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				2362E2B21E2324AF00CAA3E2 /* QKChatActionBarView.swift */,
-				2362E2B41E2324D400CAA3E2 /* QKChatActionBarView.xib */,
-				2362E2B61E23288200CAA3E2 /* QKChatButton.swift */,
-				2362E2B81E23609700CAA3E2 /* QKChatEmotionInputView.swift */,
-				2362E2BA1E2360A600CAA3E2 /* TSChatEmotionInputView.xib */,
-				2362E2BC1E23639B00CAA3E2 /* QKChatEmotionScollView.swift */,
-				2362E2BE1E2365FA00CAA3E2 /* QKChatEmotionCell.swift */,
-				2362E2BF1E2365FA00CAA3E2 /* QKChatEmotionCell.xib */,
-				2362E2C61E23969A00CAA3E2 /* QKChatShareMoreView.swift */,
-				2362E2C81E2396A500CAA3E2 /* QKChatShareMoreView.xib */,
-				235B236E1E247F4100980642 /* QKChatShareMoreCollectionViewCell.swift */,
-				235B236F1E247F4100980642 /* QKChatShareMoreCollectionViewCell.xib */,
-				235B23721E24AA1F00980642 /* QKChatVoiceIndicatorView.swift */,
-				235B23741E24AA3200980642 /* QKChatVoiceIndicatorView.xib */,
+				235B237F1E24E46500980642 /* QKChatEmotionCell.swift */,
+				235B23801E24E46500980642 /* QKChatEmotionCell.xib */,
+				235B23811E24E46500980642 /* QKChatShareMoreCollectionViewCell.swift */,
+				235B23821E24E46500980642 /* QKChatShareMoreCollectionViewCell.xib */,
 			);
-			name = View;
+			path = Cell;
 			sourceTree = "<group>";
 		};
-		23417A481E1FA1FF00A1DA34 /* Controller */ = {
+		235B23831E24E46500980642 /* ChatHelper */ = {
 			isa = PBXGroup;
 			children = (
-				23417A3F1E1F98FF00A1DA34 /* QKChatViewController.swift */,
-				23417A401E1F98FF00A1DA34 /* QKChatViewController.xib */,
 			);
-			name = Controller;
+			path = ChatHelper;
+			sourceTree = "<group>";
+		};
+		235B23841E24E46500980642 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				235B23851E24E46500980642 /* QKChatViewController.swift */,
+				235B23861E24E46500980642 /* QKChatViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		235B23871E24E46500980642 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				235B23881E24E46500980642 /* QKChatActionBarView.swift */,
+				235B23891E24E46500980642 /* QKChatActionBarView.xib */,
+				235B238A1E24E46500980642 /* QKChatButton.swift */,
+				235B238B1E24E46500980642 /* QKChatEmotionInputView.swift */,
+				235B238C1E24E46500980642 /* QKChatEmotionScollView.swift */,
+				235B238D1E24E46500980642 /* QKChatShareMoreView.swift */,
+				235B238E1E24E46500980642 /* QKChatShareMoreView.xib */,
+				235B238F1E24E46500980642 /* QKChatVoiceIndicatorView.swift */,
+				235B23901E24E46500980642 /* QKChatVoiceIndicatorView.xib */,
+				235B23911E24E46500980642 /* TSChatEmotionInputView.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		23A16DE31E1B884D007CD73A = {
@@ -305,8 +323,10 @@
 		23A16E231E1B8E0B007CD73A /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				23417A481E1FA1FF00A1DA34 /* Controller */,
-				23417A471E1FA1FA00A1DA34 /* View */,
+				235B237E1E24E46500980642 /* Cell */,
+				235B23831E24E46500980642 /* ChatHelper */,
+				235B23841E24E46500980642 /* Controller */,
+				235B23871E24E46500980642 /* Views */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -480,6 +500,8 @@
 				23A2FCE31E1CC4F200517AC5 /* QKModel.swift */,
 				235CCEA11E1E2CE700C55ED3 /* QKMessageModel.swift */,
 				235CCEA31E1E301000C55ED3 /* QKModelTransformer.swift */,
+				235B237A1E24CBFF00980642 /* QKChatModel.swift */,
+				235B237C1E24CD0A00980642 /* QKChatSubModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -641,29 +663,29 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2362E2C91E2396A500CAA3E2 /* QKChatShareMoreView.xib in Resources */,
+				235B239E1E24E46500980642 /* QKChatShareMoreView.xib in Resources */,
 				23A2FCF51E1CEE1800517AC5 /* chat.json in Resources */,
-				2362E2C11E2365FA00CAA3E2 /* QKChatEmotionCell.xib in Resources */,
 				235CCE9C1E1E1E9200C55ED3 /* DiscoverController.xib in Resources */,
 				23A2FCE71E1CCD4500517AC5 /* ConstactsController.xib in Resources */,
 				23417A3C1E1F471800A1DA34 /* QKMessageCell.xib in Resources */,
 				23A16E321E1B8F0C007CD73A /* Assets.xcassets in Resources */,
-				235B23711E247F4100980642 /* QKChatShareMoreCollectionViewCell.xib in Resources */,
 				23A16E501E1BAFB3007CD73A /* Media.xcassets in Resources */,
 				23A2FCCF1E1C8BAD00517AC5 /* Info.plist in Resources */,
 				23A2FCDB1E1C957B00517AC5 /* TSImageTextTableViewCell.xib in Resources */,
 				23A2FCF71E1CEE1800517AC5 /* message.json in Resources */,
+				235B23951E24E46500980642 /* QKChatShareMoreCollectionViewCell.xib in Resources */,
+				235B23971E24E46500980642 /* QKChatViewController.xib in Resources */,
 				23A2FCF81E1CEE1800517AC5 /* moments.json in Resources */,
 				235CCE9E1E1E227C00C55ED3 /* Kenny.jpg in Resources */,
 				23A2FCF61E1CEE1800517AC5 /* contact.json in Resources */,
-				235B23751E24AA3200980642 /* QKChatVoiceIndicatorView.xib in Resources */,
-				2362E2B51E2324D400CAA3E2 /* QKChatActionBarView.xib in Resources */,
 				23A2FCD11E1C8E2300517AC5 /* MeController.xib in Resources */,
 				235CCEA01E1E2C2C00C55ED3 /* MessageController.xib in Resources */,
-				23417A421E1F98FF00A1DA34 /* QKChatViewController.xib in Resources */,
+				235B23A11E24E46500980642 /* TSChatEmotionInputView.xib in Resources */,
+				235B23931E24E46500980642 /* QKChatEmotionCell.xib in Resources */,
 				23A2FCED1E1CD1B400517AC5 /* QKConstactCell.xib in Resources */,
+				235B23991E24E46500980642 /* QKChatActionBarView.xib in Resources */,
 				23A2FCD71E1C912200517AC5 /* TSMeAvatarTableViewCell.xib in Resources */,
-				2362E2BB1E2360A600CAA3E2 /* TSChatEmotionInputView.xib in Resources */,
+				235B23A01E24E46500980642 /* QKChatVoiceIndicatorView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -740,38 +762,40 @@
 				23417A441E1F9B0800A1DA34 /* UIViewController+Extension.swift in Sources */,
 				23A16E4C1E1B9659007CD73A /* MeController.swift in Sources */,
 				23417A381E1F2D3200A1DA34 /* QKMessageActionFloatView.swift in Sources */,
-				23417A411E1F98FF00A1DA34 /* QKChatViewController.swift in Sources */,
+				235B237D1E24CD0A00980642 /* QKChatSubModel.swift in Sources */,
+				235B239F1E24E46500980642 /* QKChatVoiceIndicatorView.swift in Sources */,
 				23417A461E1F9B6C00A1DA34 /* NSObject+String.swift in Sources */,
-				2362E2B91E23609700CAA3E2 /* QKChatEmotionInputView.swift in Sources */,
 				23A16E421E1B936A007CD73A /* QKMainTabController.swift in Sources */,
-				2362E2C01E2365FA00CAA3E2 /* QKChatEmotionCell.swift in Sources */,
+				235B23921E24E46500980642 /* QKChatEmotionCell.swift in Sources */,
+				235B23941E24E46500980642 /* QKChatShareMoreCollectionViewCell.swift in Sources */,
 				23A16E441E1B944C007CD73A /* TSUIImage+WeChat.swift in Sources */,
 				235CCEA41E1E301000C55ED3 /* QKModelTransformer.swift in Sources */,
 				23A16DF01E1B884D007CD73A /* AppDelegate.swift in Sources */,
-				2362E2C71E23969A00CAA3E2 /* QKChatShareMoreView.swift in Sources */,
 				23A16E481E1B9627007CD73A /* ConstactsController.swift in Sources */,
-				2362E2B71E23288200CAA3E2 /* QKChatButton.swift in Sources */,
-				2362E2B31E2324AF00CAA3E2 /* QKChatActionBarView.swift in Sources */,
 				23A2FCDA1E1C957B00517AC5 /* TSImageTextTableViewCell.swift in Sources */,
 				23A2FCFA1E1CF1F300517AC5 /* NSDictionary+Extension.swift in Sources */,
 				23A2FCD61E1C912200517AC5 /* TSMeAvatarTableViewCell.swift in Sources */,
+				235B23961E24E46500980642 /* QKChatViewController.swift in Sources */,
 				23A16E461E1B9608007CD73A /* MessageController.swift in Sources */,
 				23A2FCE21E1CC38000517AC5 /* QKContactModel.swift in Sources */,
+				235B239B1E24E46500980642 /* QKChatEmotionInputView.swift in Sources */,
 				235CCEA21E1E2CE700C55ED3 /* QKMessageModel.swift in Sources */,
+				235B23981E24E46500980642 /* QKChatActionBarView.swift in Sources */,
 				23A2FCE41E1CC4F200517AC5 /* QKModel.swift in Sources */,
 				23A2FCEC1E1CD1B400517AC5 /* QKConstactCell.swift in Sources */,
 				23417A3B1E1F471800A1DA34 /* QKMessageCell.swift in Sources */,
 				235CCEA61E1E330F00C55ED3 /* NSDate+Extension.swift in Sources */,
+				235B239C1E24E46500980642 /* QKChatEmotionScollView.swift in Sources */,
+				235B239A1E24E46500980642 /* QKChatButton.swift in Sources */,
 				23A2FCEF1E1CD68F00517AC5 /* QKImageView+WebChat.swift in Sources */,
-				235B23731E24AA1F00980642 /* QKChatVoiceIndicatorView.swift in Sources */,
-				2362E2BD1E23639B00CAA3E2 /* QKChatEmotionScollView.swift in Sources */,
+				235B239D1E24E46500980642 /* QKChatShareMoreView.swift in Sources */,
+				235B237B1E24CBFF00980642 /* QKChatModel.swift in Sources */,
 				23417A3E1E1F739200A1DA34 /* UIBarButtonItem+Block.swift in Sources */,
 				2362E2C51E236CB900CAA3E2 /* UIView+Frame.swift in Sources */,
 				23A2FCDD1E1C96EA00517AC5 /* QKLog.swift in Sources */,
 				23A16E4A1E1B9642007CD73A /* DiscoverController.swift in Sources */,
 				235B236D1E246DC300980642 /* QKFullyHorizontalFlowLayout.swift in Sources */,
 				23A16E4E1E1BA9F3007CD73A /* UICollor+WeChat.swift in Sources */,
-				235B23701E247F4100980642 /* QKChatShareMoreCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
