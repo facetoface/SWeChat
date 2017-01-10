@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="QKChatShareMoreCollectionViewCell" customModule="SWeChat" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="65" height="93"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="65" height="93"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <button opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SRo-NP-6Ce">
+                        <rect key="frame" x="3" y="6" width="59" height="59"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="59" id="5Fz-kf-g8V"/>
+                            <constraint firstAttribute="height" constant="59" id="5LY-o6-NfY"/>
+                            <constraint firstAttribute="width" secondItem="SRo-NP-6Ce" secondAttribute="height" multiplier="1:1" id="7Eb-OU-kL5"/>
+                        </constraints>
+                        <state key="normal" backgroundImage="sharemore_other"/>
+                        <state key="highlighted" backgroundImage="sharemore_other_HL"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="5Fz-kf-g8V"/>
+                                <exclude reference="5LY-o6-NfY"/>
+                            </mask>
+                        </variation>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V5D-pA-BNY">
+                        <rect key="frame" x="3" y="70" width="59" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="21" id="gnC-tC-UTP"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="V5D-pA-BNY" secondAttribute="trailing" constant="3" id="5Nx-FD-7YG"/>
+                <constraint firstItem="SRo-NP-6Ce" firstAttribute="width" secondItem="SRo-NP-6Ce" secondAttribute="height" multiplier="1:1" id="5Yv-dL-OM8"/>
+                <constraint firstItem="SRo-NP-6Ce" firstAttribute="centerX" secondItem="gTV-IL-0wX" secondAttribute="centerX" id="MOV-gN-194"/>
+                <constraint firstAttribute="bottom" secondItem="V5D-pA-BNY" secondAttribute="bottom" constant="2" id="kmw-cQ-LON"/>
+                <constraint firstItem="V5D-pA-BNY" firstAttribute="top" secondItem="SRo-NP-6Ce" secondAttribute="bottom" constant="5" id="lG6-Xt-f50"/>
+                <constraint firstItem="V5D-pA-BNY" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="3" id="obr-6o-ety"/>
+                <constraint firstItem="SRo-NP-6Ce" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="6" id="pNh-OP-Fvd"/>
+            </constraints>
+            <connections>
+                <outlet property="itemButton" destination="SRo-NP-6Ce" id="Puf-wc-xl9"/>
+                <outlet property="itemLabel" destination="V5D-pA-BNY" id="Zyx-E1-ECK"/>
+            </connections>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="sharemore_other" width="59" height="59"/>
+        <image name="sharemore_other_HL" width="59" height="59"/>
+    </resources>
+</document>
