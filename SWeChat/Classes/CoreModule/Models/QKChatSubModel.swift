@@ -53,7 +53,15 @@ class ChatImageModel: NSObject, QKModelProtocol {
     var originalURL: String?
     var thumbURL: String?
     var localStoreName: String?
-    var localThumbnailImage: UIImage?
+    var localThumbnailImage: UIImage? {
+        if let theLocalStoreName = localStoreName {
+            let path = QKImageFilesManger.cachePathForKey(theLocalStoreName)
+            return UIImage.init(contentsOfFile: path!)
+        } else {
+            return nil
+        }
+        
+    }
     
     
     override init() {
@@ -65,7 +73,11 @@ class ChatImageModel: NSObject, QKModelProtocol {
     }
     
     func mapping(map: Map) {
-        
+        imageHeight <- (map["height"], TransformerStringToCGFloat)
+        imageWidth <- (map["width"], TransformerStringToCGFloat)
+        originalURL <- map["original_url"]
+        thumbURL <- map["thumb_url"]
+        imageId <- map["image_id"]
     }
 }
 

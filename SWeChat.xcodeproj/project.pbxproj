@@ -13,6 +13,8 @@
 		23417A3E1E1F739200A1DA34 /* UIBarButtonItem+Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23417A3D1E1F739200A1DA34 /* UIBarButtonItem+Block.swift */; };
 		23417A441E1F9B0800A1DA34 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23417A431E1F9B0800A1DA34 /* UIViewController+Extension.swift */; };
 		23417A461E1F9B6C00A1DA34 /* NSObject+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23417A451E1F9B6C00A1DA34 /* NSObject+String.swift */; };
+		234AAB821E25D6AC0002784A /* QKChatBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234AAB801E25D6AC0002784A /* QKChatBaseCell.swift */; };
+		234AAB831E25D6AC0002784A /* QKChatBaseCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234AAB811E25D6AC0002784A /* QKChatBaseCell.xib */; };
 		235B236D1E246DC300980642 /* QKFullyHorizontalFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B236C1E246DC300980642 /* QKFullyHorizontalFlowLayout.swift */; };
 		235B237B1E24CBFF00980642 /* QKChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B237A1E24CBFF00980642 /* QKChatModel.swift */; };
 		235B237D1E24CD0A00980642 /* QKChatSubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B237C1E24CD0A00980642 /* QKChatSubModel.swift */; };
@@ -101,6 +103,8 @@
 		23417A3D1E1F739200A1DA34 /* UIBarButtonItem+Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Block.swift"; sourceTree = "<group>"; };
 		23417A431E1F9B0800A1DA34 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		23417A451E1F9B6C00A1DA34 /* NSObject+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+String.swift"; sourceTree = "<group>"; };
+		234AAB801E25D6AC0002784A /* QKChatBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatBaseCell.swift; sourceTree = "<group>"; };
+		234AAB811E25D6AC0002784A /* QKChatBaseCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKChatBaseCell.xib; sourceTree = "<group>"; };
 		235B236C1E246DC300980642 /* QKFullyHorizontalFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKFullyHorizontalFlowLayout.swift; sourceTree = "<group>"; };
 		235B237A1E24CBFF00980642 /* QKChatModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatModel.swift; sourceTree = "<group>"; };
 		235B237C1E24CD0A00980642 /* QKChatSubModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatSubModel.swift; sourceTree = "<group>"; };
@@ -213,6 +217,8 @@
 				235B23801E24E46500980642 /* QKChatEmotionCell.xib */,
 				235B23811E24E46500980642 /* QKChatShareMoreCollectionViewCell.swift */,
 				235B23821E24E46500980642 /* QKChatShareMoreCollectionViewCell.xib */,
+				234AAB801E25D6AC0002784A /* QKChatBaseCell.swift */,
+				234AAB811E25D6AC0002784A /* QKChatBaseCell.xib */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -676,6 +682,7 @@
 				23A2FCCF1E1C8BAD00517AC5 /* Info.plist in Resources */,
 				23A2FCDB1E1C957B00517AC5 /* TSImageTextTableViewCell.xib in Resources */,
 				23A2FCF71E1CEE1800517AC5 /* message.json in Resources */,
+				234AAB831E25D6AC0002784A /* QKChatBaseCell.xib in Resources */,
 				235B23951E24E46500980642 /* QKChatShareMoreCollectionViewCell.xib in Resources */,
 				235B23971E24E46500980642 /* QKChatViewController.xib in Resources */,
 				23A2FCF81E1CEE1800517AC5 /* moments.json in Resources */,
@@ -775,6 +782,7 @@
 				235CCEA41E1E301000C55ED3 /* QKModelTransformer.swift in Sources */,
 				23A16DF01E1B884D007CD73A /* AppDelegate.swift in Sources */,
 				23A16E481E1B9627007CD73A /* ConstactsController.swift in Sources */,
+				234AAB821E25D6AC0002784A /* QKChatBaseCell.swift in Sources */,
 				23A2FCDA1E1C957B00517AC5 /* TSImageTextTableViewCell.swift in Sources */,
 				23A2FCFA1E1CF1F300517AC5 /* NSDictionary+Extension.swift in Sources */,
 				23A2FCD61E1C912200517AC5 /* TSMeAvatarTableViewCell.swift in Sources */,

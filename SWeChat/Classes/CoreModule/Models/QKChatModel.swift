@@ -12,6 +12,8 @@ import YYText
 
 class QKChatModel: NSObject, QKModelProtocol {
     
+    var audioModel: ChatAudioModel?
+    
     override init() {
         super.init()
     }
