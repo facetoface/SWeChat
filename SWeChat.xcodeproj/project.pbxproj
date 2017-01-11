@@ -31,7 +31,7 @@
 		235B239E1E24E46500980642 /* QKChatShareMoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235B238E1E24E46500980642 /* QKChatShareMoreView.xib */; };
 		235B239F1E24E46500980642 /* QKChatVoiceIndicatorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B238F1E24E46500980642 /* QKChatVoiceIndicatorView.swift */; };
 		235B23A01E24E46500980642 /* QKChatVoiceIndicatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235B23901E24E46500980642 /* QKChatVoiceIndicatorView.xib */; };
-		235B23A11E24E46500980642 /* TSChatEmotionInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235B23911E24E46500980642 /* TSChatEmotionInputView.xib */; };
+		235B23A11E24E46500980642 /* QKChatEmotionInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235B23911E24E46500980642 /* QKChatEmotionInputView.xib */; };
 		235B23A31E24E97D00980642 /* QKImageFilesManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B23A21E24E97D00980642 /* QKImageFilesManger.swift */; };
 		235CCE9C1E1E1E9200C55ED3 /* DiscoverController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235CCE9B1E1E1E9200C55ED3 /* DiscoverController.xib */; };
 		235CCE9E1E1E227C00C55ED3 /* Kenny.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 235CCE9D1E1E227C00C55ED3 /* Kenny.jpg */; };
@@ -119,7 +119,7 @@
 		235B238E1E24E46500980642 /* QKChatShareMoreView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKChatShareMoreView.xib; sourceTree = "<group>"; };
 		235B238F1E24E46500980642 /* QKChatVoiceIndicatorView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatVoiceIndicatorView.swift; sourceTree = "<group>"; };
 		235B23901E24E46500980642 /* QKChatVoiceIndicatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKChatVoiceIndicatorView.xib; sourceTree = "<group>"; };
-		235B23911E24E46500980642 /* TSChatEmotionInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TSChatEmotionInputView.xib; sourceTree = "<group>"; };
+		235B23911E24E46500980642 /* QKChatEmotionInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKChatEmotionInputView.xib; sourceTree = "<group>"; };
 		235B23A21E24E97D00980642 /* QKImageFilesManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKImageFilesManger.swift; sourceTree = "<group>"; };
 		235CCE9B1E1E1E9200C55ED3 /* DiscoverController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverController.xib; sourceTree = "<group>"; };
 		235CCE9D1E1E227C00C55ED3 /* Kenny.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kenny.jpg; sourceTree = "<group>"; };
@@ -241,12 +241,12 @@
 				235B23891E24E46500980642 /* QKChatActionBarView.xib */,
 				235B238A1E24E46500980642 /* QKChatButton.swift */,
 				235B238B1E24E46500980642 /* QKChatEmotionInputView.swift */,
+				235B23911E24E46500980642 /* QKChatEmotionInputView.xib */,
 				235B238C1E24E46500980642 /* QKChatEmotionScollView.swift */,
 				235B238D1E24E46500980642 /* QKChatShareMoreView.swift */,
 				235B238E1E24E46500980642 /* QKChatShareMoreView.xib */,
 				235B238F1E24E46500980642 /* QKChatVoiceIndicatorView.swift */,
 				235B23901E24E46500980642 /* QKChatVoiceIndicatorView.xib */,
-				235B23911E24E46500980642 /* TSChatEmotionInputView.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -683,7 +683,7 @@
 				23A2FCF61E1CEE1800517AC5 /* contact.json in Resources */,
 				23A2FCD11E1C8E2300517AC5 /* MeController.xib in Resources */,
 				235CCEA01E1E2C2C00C55ED3 /* MessageController.xib in Resources */,
-				235B23A11E24E46500980642 /* TSChatEmotionInputView.xib in Resources */,
+				235B23A11E24E46500980642 /* QKChatEmotionInputView.xib in Resources */,
 				235B23931E24E46500980642 /* QKChatEmotionCell.xib in Resources */,
 				23A2FCED1E1CD1B400517AC5 /* QKConstactCell.xib in Resources */,
 				235B23991E24E46500980642 /* QKChatActionBarView.xib in Resources */,
