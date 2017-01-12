@@ -10,10 +10,24 @@ import UIKit
 import RxSwift
 
 private let kChatNicknameLabelHeight: CGFloat = 20
+
 let kChatAvatarMarginLeft: CGFloat = 10
 let kChatAvatarMarginTop: CGFloat = 0
 let kChatAvatarWidth: CGFloat = 40
-
+let kChatTextLeft: CGFloat = 72
+let kChatTextMaxWidth: CGFloat = UIScreen.ts_width - kChatTextLeft - 82
+let kChatTextMarginTop: CGFloat = 12
+let kChatTextMarginBottom: CGFloat = 11
+let kChatTextMarginLeft: CGFloat = 17
+let kChatBubbleWidthBuffer: CGFloat = kChatTextMarginLeft * 2
+let kChatBubbleBottomTransparentHeight: CGFloat = 11
+let kChatBubbleHeightBuffer: CGFloat = kChatTextMarginTop + kChatTextMarginBottom
+let kChatBubbleImageViewHeight: CGFloat = 54
+let kChatBubbleImageViewWidth: CGFloat = 50
+let kChatBubblePaddingTop: CGFloat = 3
+let kChatBubbleMaginLeft: CGFloat = 5
+let kChatBubblePaddingBottom: CGFloat = 8
+let kChatBubbleLeft: CGFloat = kChatAvatarMarginLeft + kChatAvatarWidth + kChatBubbleMaginLeft
 
 class QKChatBaseCell: UITableViewCell {
     weak var delegate: QKChatCellDelegate?
