@@ -13,7 +13,7 @@ import YYText
 class QKChatModel: NSObject, QKModelProtocol {
     
     var audioModel: ChatAudioModel?
-    var imageModel: ChatAudioModel?
+    var imageModel: ChatImageModel?
     var chatSendId: String?
     var chatReceiveId: String?
     var device: String?
@@ -72,7 +72,7 @@ class QKChatModel: NSObject, QKModelProtocol {
         self.chatSendId = UserInstance.userId!
     }
     
-    init(imageModel: ChatAudioModel) {
+    init(imageModel: ChatImageModel) {
         super.init()
         self.timestamp = String.init(format: "%f", Date.milliseconds)
         self.messageContent = "[图片]"
