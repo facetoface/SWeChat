@@ -16,7 +16,8 @@ let kChatAvatarWidth: CGFloat = 40
 
 
 class QKChatBaseCell: UITableViewCell {
-
+    weak var delegate: QKChatCellDelegate?
+    
     @IBOutlet weak var avatarImageView: UIImageView! {
         didSet {
             avatarImageView.backgroundColor = UIColor.clear
@@ -46,13 +47,43 @@ class QKChatBaseCell: UITableViewCell {
         self.backgroundColor = UIColor.clear
         let tap = UITapGestureRecognizer()
         self.avatarImageView.addGestureRecognizer(tap)
-        tap.rx.event.subscribe({[weak self] _ in
+        tap.rx.event.subscribe{[weak self] _ in
             if let strongSelf = self {
+                guard let delegate = strongSelf.delegate else {
+                    return
+                }
+                delegate.cellDidTapedImageView(strongSelf)
             }
-            }
-        ).addDisposableTo(self.disposeBag)
+            
+            }.addDisposableTo(self.disposeBag)
     }
-
+    
+    
+    func setCellContent(_ model: QKChatModel)  {
+        self.model = model
+        if self.model!.fromMe {
+            let avatarURL = "http://ww3.sinaimg.cn/thumbnail/6a011e49jw1f1e87gcr14j20ks0ksdgr.jpg"
+            self.avatarImageView.qk_setImageWithURLString(avatarURL, placeholderImage: TSAsset.Icon_avatar.image)
+        } else {
+            let avaterURL = "http://ww2.sinaimg.cn/large/6a011e49jw1f1j01nj8g6j204f04ft8r.jpg"
+            self.avatarImageView.qk_setImageWithURLString(avaterURL, placeholderImage: TSAsset.Icon_avatar.image)
+        }
+        self.setNeedsLayout()
+    }
+    
+    override func layoutSubviews() {
+        guard let model = self.model else {
+            return
+        }
+        if model.fromMe {
+            self.nicknameLabel.height = 0
+            self.avatarImageView.left = UIScreen.ts_width - kChatAvatarMarginLeft - kChatAvatarWidth
+        } else {
+            self.nicknameLabel.height = 0
+            self.avatarImageView.left = kChatAvatarMarginLeft
+        }
+    }
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }

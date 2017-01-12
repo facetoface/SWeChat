@@ -17,6 +17,8 @@
 		234AAB951E262E290002784A /* QKChatVoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234AAB931E262E290002784A /* QKChatVoiceCell.swift */; };
 		234AAB961E262E290002784A /* QKChatVoiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234AAB941E262E290002784A /* QKChatVoiceCell.xib */; };
 		234AAB981E2631B90002784A /* QKChatCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234AAB971E2631B90002784A /* QKChatCellDelegate.swift */; };
+		23536F491E271A2E00E3979C /* QKUserManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23536F481E271A2E00E3979C /* QKUserManger.swift */; };
+		23536F4B1E27220D00E3979C /* QKYYTextLinePositionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23536F4A1E27220D00E3979C /* QKYYTextLinePositionModifier.swift */; };
 		235B236D1E246DC300980642 /* QKFullyHorizontalFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B236C1E246DC300980642 /* QKFullyHorizontalFlowLayout.swift */; };
 		235B237B1E24CBFF00980642 /* QKChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B237A1E24CBFF00980642 /* QKChatModel.swift */; };
 		235B237D1E24CD0A00980642 /* QKChatSubModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B237C1E24CD0A00980642 /* QKChatSubModel.swift */; };
@@ -109,6 +111,8 @@
 		234AAB931E262E290002784A /* QKChatVoiceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatVoiceCell.swift; sourceTree = "<group>"; };
 		234AAB941E262E290002784A /* QKChatVoiceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKChatVoiceCell.xib; sourceTree = "<group>"; };
 		234AAB971E2631B90002784A /* QKChatCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatCellDelegate.swift; sourceTree = "<group>"; };
+		23536F481E271A2E00E3979C /* QKUserManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKUserManger.swift; sourceTree = "<group>"; };
+		23536F4A1E27220D00E3979C /* QKYYTextLinePositionModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKYYTextLinePositionModifier.swift; sourceTree = "<group>"; };
 		235B236C1E246DC300980642 /* QKFullyHorizontalFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKFullyHorizontalFlowLayout.swift; sourceTree = "<group>"; };
 		235B237A1E24CBFF00980642 /* QKChatModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatModel.swift; sourceTree = "<group>"; };
 		235B237C1E24CD0A00980642 /* QKChatSubModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatSubModel.swift; sourceTree = "<group>"; };
@@ -233,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				235B23A21E24E97D00980642 /* QKImageFilesManger.swift */,
+				23536F4A1E27220D00E3979C /* QKYYTextLinePositionModifier.swift */,
 			);
 			path = ChatHelper;
 			sourceTree = "<group>";
@@ -517,6 +522,7 @@
 				235CCEA31E1E301000C55ED3 /* QKModelTransformer.swift */,
 				235B237A1E24CBFF00980642 /* QKChatModel.swift */,
 				235B237C1E24CD0A00980642 /* QKChatSubModel.swift */,
+				23536F481E271A2E00E3979C /* QKUserManger.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -774,6 +780,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				23536F491E271A2E00E3979C /* QKUserManger.swift in Sources */,
 				2362E2C31E23687100CAA3E2 /* QKConfig.swift in Sources */,
 				23417A441E1F9B0800A1DA34 /* UIViewController+Extension.swift in Sources */,
 				23A16E4C1E1B9659007CD73A /* MeController.swift in Sources */,
@@ -785,6 +792,7 @@
 				235B23921E24E46500980642 /* QKChatEmotionCell.swift in Sources */,
 				235B23941E24E46500980642 /* QKChatShareMoreCollectionViewCell.swift in Sources */,
 				23A16E441E1B944C007CD73A /* TSUIImage+WeChat.swift in Sources */,
+				23536F4B1E27220D00E3979C /* QKYYTextLinePositionModifier.swift in Sources */,
 				235CCEA41E1E301000C55ED3 /* QKModelTransformer.swift in Sources */,
 				23A16DF01E1B884D007CD73A /* AppDelegate.swift in Sources */,
 				23A16E481E1B9627007CD73A /* ConstactsController.swift in Sources */,
