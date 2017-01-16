@@ -28,11 +28,25 @@ class QKChatViewController: UIViewController {
     var actionBarPaddingBottomConstraint: Constraint?
     var keyboardHeightConstraint: NSLayoutConstraint?
     var emotionInputeView: QKChatEmotionInputView!
+    var shareMoreView: QKChatShareMoreView!
+    var voiceIndicatorView: QKChatVoiceIndicatorView!
+    var itemDataSouce = [QKChatModel]()
+    var isReloading: Bool = false
+    var currentVoiceCell: QKChatVoiceCell!
+    var isEndRefreshing: Bool = true
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        self.title = self.messageModel!.nickname
+        self.view.backgroundColor = UIColor.viewBackgroundColor
+        self.navigationController!.interactivePopGestureRecognizer!.isEnabled = true
+        
+        self.listTableView.ts_registerCellNib(QKChatTextCell.self)
+        self.listTableView.ts_registerCellNib(QKChatImageCell.self)
+        self.listTableView.ts_registerCellNib(QKChatVoiceCell.self)
+        self.listTableView.ts_registerCellNib(QKChatTimeCell.self)
+        
     }
 
     override func didReceiveMemoryWarning() {
