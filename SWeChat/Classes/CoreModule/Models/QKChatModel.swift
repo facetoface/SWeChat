@@ -27,6 +27,7 @@ class QKChatModel: NSObject, QKModelProtocol {
     }
     var richTextLayout: YYTextLayout?
     var richTextLinePositionModifier: QKYYTextLinePositionModifier?
+    var richTextAttributedString: NSMutableAttributedString?
     var messageSendSuccessType: MessageSendSuccessType = .failed
     var cellHeight: CGFloat = 0
     

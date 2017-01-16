@@ -42,6 +42,7 @@
 		235B23A01E24E46500980642 /* QKChatVoiceIndicatorView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235B23901E24E46500980642 /* QKChatVoiceIndicatorView.xib */; };
 		235B23A11E24E46500980642 /* QKChatEmotionInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235B23911E24E46500980642 /* QKChatEmotionInputView.xib */; };
 		235B23A31E24E97D00980642 /* QKImageFilesManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B23A21E24E97D00980642 /* QKImageFilesManger.swift */; };
+		235B9C4D1E2C596B00D856DC /* QKEmojiDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 235B9C4C1E2C596B00D856DC /* QKEmojiDictionary.swift */; };
 		235CCE9C1E1E1E9200C55ED3 /* DiscoverController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235CCE9B1E1E1E9200C55ED3 /* DiscoverController.xib */; };
 		235CCE9E1E1E227C00C55ED3 /* Kenny.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 235CCE9D1E1E227C00C55ED3 /* Kenny.jpg */; };
 		235CCEA01E1E2C2C00C55ED3 /* MessageController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 235CCE9F1E1E2C2C00C55ED3 /* MessageController.xib */; };
@@ -142,6 +143,7 @@
 		235B23901E24E46500980642 /* QKChatVoiceIndicatorView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKChatVoiceIndicatorView.xib; sourceTree = "<group>"; };
 		235B23911E24E46500980642 /* QKChatEmotionInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKChatEmotionInputView.xib; sourceTree = "<group>"; };
 		235B23A21E24E97D00980642 /* QKImageFilesManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKImageFilesManger.swift; sourceTree = "<group>"; };
+		235B9C4C1E2C596B00D856DC /* QKEmojiDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKEmojiDictionary.swift; sourceTree = "<group>"; };
 		235CCE9B1E1E1E9200C55ED3 /* DiscoverController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DiscoverController.xib; sourceTree = "<group>"; };
 		235CCE9D1E1E227C00C55ED3 /* Kenny.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Kenny.jpg; sourceTree = "<group>"; };
 		235CCE9F1E1E2C2C00C55ED3 /* MessageController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MessageController.xib; sourceTree = "<group>"; };
@@ -256,6 +258,7 @@
 				23536F4A1E27220D00E3979C /* QKYYTextLinePositionModifier.swift */,
 				23536F521E278CB100E3979C /* QKChatConfig.swift */,
 				236E610D1E2877DF008C4D21 /* QKChatTextParser.swift */,
+				235B9C4C1E2C596B00D856DC /* QKEmojiDictionary.swift */,
 			);
 			path = ChatHelper;
 			sourceTree = "<group>";
@@ -840,6 +843,7 @@
 				235B239A1E24E46500980642 /* QKChatButton.swift in Sources */,
 				23A2FCEF1E1CD68F00517AC5 /* QKImageView+WebChat.swift in Sources */,
 				235B239D1E24E46500980642 /* QKChatShareMoreView.swift in Sources */,
+				235B9C4D1E2C596B00D856DC /* QKEmojiDictionary.swift in Sources */,
 				235B237B1E24CBFF00980642 /* QKChatModel.swift in Sources */,
 				236E610B1E287352008C4D21 /* QKChatTextCell.swift in Sources */,
 				23417A3E1E1F739200A1DA34 /* UIBarButtonItem+Block.swift in Sources */,

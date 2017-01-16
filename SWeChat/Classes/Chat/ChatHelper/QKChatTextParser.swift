@@ -80,6 +80,15 @@ class QKChatTextParser: NSObject {
                 continue
             }
             
+            let imageName = attributedText.string.substring(with: attributedText.string.range(from: range)!)
+            guard let theImageName = QKEmojiDictionary[imageName] else {
+                continue
+            }
+            
+            let imageString = "\(QKConfig.ExpressionBundleName)/\(theImageName)"
+            let emojiText = NSMutableAttributedString.yy_attachmentString(withEmojiImage: UIImage.init(named: imageString)!, fontSize: fontSize + 1)
+            attributedText.replaceCharacters(in: range, with: emojiText!)
+            emoClipLength += range.length - 1
         }
     }
 }
