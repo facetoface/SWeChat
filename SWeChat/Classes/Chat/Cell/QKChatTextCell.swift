@@ -21,8 +21,7 @@ class QKChatTextCell: QKChatBaseCell {
             contentLabel.textVerticalAlignment = YYTextVerticalAlignment.top
             contentLabel.displaysAsynchronously = false
             contentLabel.ignoreCommonProperties = true
-            contentLabel.highlightTapAction = ({
-                [weak self] containerView, text, range, rect in
+            contentLabel.highlightTapAction = ({[weak self] containerView, text, range, rect in
                 self!.didTapRichLabelText(self!.contentLabel, textRange: range)
             })
         }

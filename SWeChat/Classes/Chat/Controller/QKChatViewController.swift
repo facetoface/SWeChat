@@ -10,14 +10,14 @@ import UIKit
 import SnapKit
 
 
-class QKChatViewController: UIViewController {
+final class QKChatViewController: UIViewController {
     var messageModel: MessageModel?
     @IBOutlet var refreshView: UIView!
     @IBOutlet weak var indicatorView: UIActivityIndicatorView!
     lazy var listTableView: UITableView = {
         let listTableView = UITableView(frame: CGRect.zero, style: .plain)
-//        listTableView.dataSource = self
-//        listTableView.delegate = self
+        listTableView.dataSource = self
+        listTableView.delegate = self
         listTableView.backgroundColor = UIColor.clear
         listTableView.separatorStyle = .none
         listTableView.backgroundView = UIImageView(image: TSAsset.Chat_background.image)
@@ -46,6 +46,8 @@ class QKChatViewController: UIViewController {
         self.listTableView.ts_registerCellNib(QKChatImageCell.self)
         self.listTableView.ts_registerCellNib(QKChatVoiceCell.self)
         self.listTableView.ts_registerCellNib(QKChatTimeCell.self)
+        self.listTableView.ts_registerCellNib(QKChatSystemCell.self)
+        self.listTableView.tableFooterView = UIView()
         
     }
 
@@ -55,4 +57,55 @@ class QKChatViewController: UIViewController {
     
 
 
+}
+
+
+extension QKChatViewController: UITableViewDataSource {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return self.itemDataSouce.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let chatModel = self.itemDataSouce.get(index: indexPath.row) else {
+            return QKChatBaseCell()
+        }
+        let type: MessageContentType = chatModel.messageContentType
+        return type.chatCell(tableView, indexPath: indexPath, model: chatModel, viewController: self)!
+    }
+}
+
+extension QKChatViewController: UITableViewDelegate {
+    
+}
+
+extension QKChatViewController: QKChatCellDelegate {
+    func cellDidTapped(_ cell: QKChatBaseCell) {
+        
+    }
+    
+    func cellDidTapedAvatarImage(_ cell: QKChatBaseCell) {
+        
+    }
+    
+    func cellDidTapedImageView(_ cell: QKChatBaseCell) {
+        
+    }
+    
+    func cellDidTapedLink(_ cell: QKChatBaseCell, linkSting: String) {
+        
+    }
+    
+    func cellDidTapedPhone(_ cell: QKChatBaseCell, phoneString: String) {
+        
+    }
+    
+    func cellDidTapedVoiceButton(_ cell: QKChatBaseCell, isPlayingVoice: Bool) {
+        
+    }
+    
+    
 }

@@ -57,6 +57,7 @@
 		235CCEA81E1E411400C55ED3 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 235CCEA71E1E411400C55ED3 /* CoreLocation.framework */; };
 		2362E2C31E23687100CAA3E2 /* QKConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2362E2C21E23687100CAA3E2 /* QKConfig.swift */; };
 		2362E2C51E236CB900CAA3E2 /* UIView+Frame.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2362E2C41E236CB900CAA3E2 /* UIView+Frame.swift */; };
+		236B57421E2E0C4C00E9208C /* QKChatViewController+CellEnums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236B57411E2E0C4C00E9208C /* QKChatViewController+CellEnums.swift */; };
 		236E610B1E287352008C4D21 /* QKChatTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236E61091E287352008C4D21 /* QKChatTextCell.swift */; };
 		236E610C1E287352008C4D21 /* QKChatTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236E610A1E287352008C4D21 /* QKChatTextCell.xib */; };
 		236E610E1E2877DF008C4D21 /* QKChatTextParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236E610D1E2877DF008C4D21 /* QKChatTextParser.swift */; };
@@ -163,6 +164,7 @@
 		235CCEA71E1E411400C55ED3 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		2362E2C21E23687100CAA3E2 /* QKConfig.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKConfig.swift; sourceTree = "<group>"; };
 		2362E2C41E236CB900CAA3E2 /* UIView+Frame.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Frame.swift"; sourceTree = "<group>"; };
+		236B57411E2E0C4C00E9208C /* QKChatViewController+CellEnums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "QKChatViewController+CellEnums.swift"; sourceTree = "<group>"; };
 		236E61091E287352008C4D21 /* QKChatTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatTextCell.swift; sourceTree = "<group>"; };
 		236E610A1E287352008C4D21 /* QKChatTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKChatTextCell.xib; sourceTree = "<group>"; };
 		236E610D1E2877DF008C4D21 /* QKChatTextParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatTextParser.swift; sourceTree = "<group>"; };
@@ -273,6 +275,7 @@
 				23536F521E278CB100E3979C /* QKChatConfig.swift */,
 				236E610D1E2877DF008C4D21 /* QKChatTextParser.swift */,
 				235B9C4C1E2C596B00D856DC /* QKEmojiDictionary.swift */,
+				236B57411E2E0C4C00E9208C /* QKChatViewController+CellEnums.swift */,
 			);
 			path = ChatHelper;
 			sourceTree = "<group>";
@@ -866,6 +869,7 @@
 				235B9C4D1E2C596B00D856DC /* QKEmojiDictionary.swift in Sources */,
 				235B237B1E24CBFF00980642 /* QKChatModel.swift in Sources */,
 				236E610B1E287352008C4D21 /* QKChatTextCell.swift in Sources */,
+				236B57421E2E0C4C00E9208C /* QKChatViewController+CellEnums.swift in Sources */,
 				23417A3E1E1F739200A1DA34 /* UIBarButtonItem+Block.swift in Sources */,
 				2362E2C51E236CB900CAA3E2 /* UIView+Frame.swift in Sources */,
 				23A2FCDD1E1C96EA00517AC5 /* QKLog.swift in Sources */,
