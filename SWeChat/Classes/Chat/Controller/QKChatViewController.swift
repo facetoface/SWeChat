@@ -79,7 +79,13 @@ extension QKChatViewController: UITableViewDataSource {
 }
 
 extension QKChatViewController: UITableViewDelegate {
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        guard  let chatModel = self.itemDataSouce.get(index: indexPath.row) else {
+            return 0
+        }
+        let type: MessageContentType = chatModel.messageContentType
+        return type.chatCellHeight(chatModel)
+    }
 }
 
 extension QKChatViewController: QKChatCellDelegate {
