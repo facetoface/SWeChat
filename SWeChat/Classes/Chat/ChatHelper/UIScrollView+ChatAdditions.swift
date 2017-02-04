@@ -54,4 +54,23 @@ extension UIScrollView {
         return object_getIvar(self, instanceVariable) as AnyObject
     }
     
+    public func scrollToTopAnimated(_ animated: Bool) {
+        if !self.isAtTop {
+            let bottomOffset = CGPoint.zero
+            self.setContentOffset(bottomOffset, animated: animated)
+        }
+    }
+    
+    public func stopScrolling() {
+        guard self.isDragging else {
+            return
+        }
+        var offset = self.contentOffset
+        offset.y -= 1.0
+        self.setContentOffset(offset, animated: false)
+        
+        offset.y += 1.0
+        self.setContentOffset(offset, animated: false)
+    }
+    
 }
