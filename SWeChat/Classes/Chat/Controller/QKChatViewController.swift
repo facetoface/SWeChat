@@ -49,6 +49,9 @@ final class QKChatViewController: UIViewController {
         self.listTableView.ts_registerCellNib(QKChatSystemCell.self)
         self.listTableView.tableFooterView = UIView()
         
+        self.firstFetchMessageList()
+        self.listTableView.reloadData()
+        
     }
 
     override func didReceiveMemoryWarning() {
@@ -76,9 +79,7 @@ extension QKChatViewController: UITableViewDataSource {
         let type: MessageContentType = chatModel.messageContentType
         return type.chatCell(tableView, indexPath: indexPath, model: chatModel, viewController: self)!
     }
-}
-
-extension QKChatViewController: UITableViewDelegate {
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         guard  let chatModel = self.itemDataSouce.get(index: indexPath.row) else {
             return 0
@@ -86,6 +87,10 @@ extension QKChatViewController: UITableViewDelegate {
         let type: MessageContentType = chatModel.messageContentType
         return type.chatCellHeight(chatModel)
     }
+}
+
+extension QKChatViewController: UITableViewDelegate {
+   
 }
 
 extension QKChatViewController: QKChatCellDelegate {
