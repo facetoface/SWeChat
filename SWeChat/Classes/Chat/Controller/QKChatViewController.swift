@@ -8,7 +8,7 @@
 
 import UIKit
 import SnapKit
-
+import RxSwift
 
 final class QKChatViewController: UIViewController {
     var messageModel: MessageModel?
@@ -30,6 +30,7 @@ final class QKChatViewController: UIViewController {
     var emotionInputeView: QKChatEmotionInputView!
     var shareMoreView: QKChatShareMoreView!
     var voiceIndicatorView: QKChatVoiceIndicatorView!
+    let disposeBag = DisposeBag()
     var itemDataSouce = [QKChatModel]()
     var isReloading: Bool = false
     var currentVoiceCell: QKChatVoiceCell!
@@ -48,6 +49,11 @@ final class QKChatViewController: UIViewController {
         self.listTableView.ts_registerCellNib(QKChatTimeCell.self)
         self.listTableView.ts_registerCellNib(QKChatSystemCell.self)
         self.listTableView.tableFooterView = UIView()
+        self.listTableView.tableHeaderView = self.refreshView
+        
+
+    
+
         
         self.firstFetchMessageList()
         self.listTableView.reloadData()
