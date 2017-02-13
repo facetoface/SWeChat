@@ -11,7 +11,7 @@ import UIKit
 extension QKChatViewController: ChatEmotionInputViewDelegate {
     
     func chatEmotionInputViewDidTapSend() {
-        
+        self.chatSendText()
     }
     
     func chatEmotionInputViewDidTapCell(_ cell: QKChatEmotionCell) {
@@ -24,6 +24,18 @@ extension QKChatViewController: ChatEmotionInputViewDelegate {
         self.chatActionBarView.inputTextView.deleteBackward()
     }
     
+}
+
+extension QKChatViewController: UITextViewDelegate {
+    
+    func textViewDidChange(_ textView: UITextView) {
+        let contentHeight = textView.contentSize.height
+        guard contentHeight < kChatActionBarTextViewMaxHeight else {
+            return
+        }
+        self.chatActionBarView.inputTextViewCurrentHeight = contentHeight + 17
+        
+    }
 }
 
 
