@@ -22,6 +22,8 @@
 		234C02341E30519B00B57DA2 /* UITableView+ChatAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234C02331E30519B00B57DA2 /* UITableView+ChatAdditions.swift */; };
 		234C02361E305F4700B57DA2 /* QKChatViewController+SubViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234C02351E305F4700B57DA2 /* QKChatViewController+SubViews.swift */; };
 		234C02381E30614500B57DA2 /* QKChatViewController+KeyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234C02371E30614500B57DA2 /* QKChatViewController+KeyBoard.swift */; };
+		234F30ED1E5299D200D6324E /* AudioDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234F30EC1E5299D200D6324E /* AudioDelegate.swift */; };
+		234F30EF1E52AF8000D6324E /* AudioFilesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234F30EE1E52AF8000D6324E /* AudioFilesManager.swift */; };
 		23536F491E271A2E00E3979C /* QKUserManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23536F481E271A2E00E3979C /* QKUserManger.swift */; };
 		23536F4B1E27220D00E3979C /* QKYYTextLinePositionModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23536F4A1E27220D00E3979C /* QKYYTextLinePositionModifier.swift */; };
 		23536F501E277D7F00E3979C /* QKChatImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23536F4E1E277D7F00E3979C /* QKChatImageCell.swift */; };
@@ -69,7 +71,7 @@
 		236D15AC1E51A225009C9105 /* QKProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236D15AB1E51A225009C9105 /* QKProgressHUD.swift */; };
 		236D15AE1E51AD17009C9105 /* QKChatViewController+ActionBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236D15AD1E51AD17009C9105 /* QKChatViewController+ActionBar.swift */; };
 		236D15B01E51AEDA009C9105 /* QKChatButton+UI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236D15AF1E51AEDA009C9105 /* QKChatButton+UI.swift */; };
-		236D15B21E51BB0E009C9105 /* AudioRecordManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236D15B11E51BB0E009C9105 /* AudioRecordManger.swift */; };
+		236D15B21E51BB0E009C9105 /* AudioRecordManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236D15B11E51BB0E009C9105 /* AudioRecordManager.swift */; };
 		236E610B1E287352008C4D21 /* QKChatTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236E61091E287352008C4D21 /* QKChatTextCell.swift */; };
 		236E610C1E287352008C4D21 /* QKChatTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236E610A1E287352008C4D21 /* QKChatTextCell.xib */; };
 		236E610E1E2877DF008C4D21 /* QKChatTextParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236E610D1E2877DF008C4D21 /* QKChatTextParser.swift */; };
@@ -141,6 +143,8 @@
 		234C02331E30519B00B57DA2 /* UITableView+ChatAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+ChatAdditions.swift"; sourceTree = "<group>"; };
 		234C02351E305F4700B57DA2 /* QKChatViewController+SubViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "QKChatViewController+SubViews.swift"; sourceTree = "<group>"; };
 		234C02371E30614500B57DA2 /* QKChatViewController+KeyBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "QKChatViewController+KeyBoard.swift"; sourceTree = "<group>"; };
+		234F30EC1E5299D200D6324E /* AudioDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioDelegate.swift; sourceTree = "<group>"; };
+		234F30EE1E52AF8000D6324E /* AudioFilesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioFilesManager.swift; sourceTree = "<group>"; };
 		23536F481E271A2E00E3979C /* QKUserManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKUserManger.swift; sourceTree = "<group>"; };
 		23536F4A1E27220D00E3979C /* QKYYTextLinePositionModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKYYTextLinePositionModifier.swift; sourceTree = "<group>"; };
 		23536F4E1E277D7F00E3979C /* QKChatImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatImageCell.swift; sourceTree = "<group>"; };
@@ -188,7 +192,7 @@
 		236D15AB1E51A225009C9105 /* QKProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKProgressHUD.swift; sourceTree = "<group>"; };
 		236D15AD1E51AD17009C9105 /* QKChatViewController+ActionBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "QKChatViewController+ActionBar.swift"; sourceTree = "<group>"; };
 		236D15AF1E51AEDA009C9105 /* QKChatButton+UI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "QKChatButton+UI.swift"; sourceTree = "<group>"; };
-		236D15B11E51BB0E009C9105 /* AudioRecordManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioRecordManger.swift; sourceTree = "<group>"; };
+		236D15B11E51BB0E009C9105 /* AudioRecordManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioRecordManager.swift; sourceTree = "<group>"; };
 		236E61091E287352008C4D21 /* QKChatTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatTextCell.swift; sourceTree = "<group>"; };
 		236E610A1E287352008C4D21 /* QKChatTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKChatTextCell.xib; sourceTree = "<group>"; };
 		236E610D1E2877DF008C4D21 /* QKChatTextParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatTextParser.swift; sourceTree = "<group>"; };
@@ -305,7 +309,9 @@
 				234C02351E305F4700B57DA2 /* QKChatViewController+SubViews.swift */,
 				234C02371E30614500B57DA2 /* QKChatViewController+KeyBoard.swift */,
 				233FA40E1E31F8D100953F4C /* UIScrollView+ChatAdditions.swift */,
-				236D15B11E51BB0E009C9105 /* AudioRecordManger.swift */,
+				236D15B11E51BB0E009C9105 /* AudioRecordManager.swift */,
+				234F30EC1E5299D200D6324E /* AudioDelegate.swift */,
+				234F30EE1E52AF8000D6324E /* AudioFilesManager.swift */,
 			);
 			path = ChatHelper;
 			sourceTree = "<group>";
@@ -887,10 +893,11 @@
 				23A2FCDA1E1C957B00517AC5 /* TSImageTextTableViewCell.swift in Sources */,
 				23A2FCFA1E1CF1F300517AC5 /* NSDictionary+Extension.swift in Sources */,
 				236D15A81E519CF3009C9105 /* QKChatViewController+HandleData.swift in Sources */,
-				236D15B21E51BB0E009C9105 /* AudioRecordManger.swift in Sources */,
+				236D15B21E51BB0E009C9105 /* AudioRecordManager.swift in Sources */,
 				23A2FCD61E1C912200517AC5 /* TSMeAvatarTableViewCell.swift in Sources */,
 				235B23961E24E46500980642 /* QKChatViewController.swift in Sources */,
 				234C02381E30614500B57DA2 /* QKChatViewController+KeyBoard.swift in Sources */,
+				234F30EF1E52AF8000D6324E /* AudioFilesManager.swift in Sources */,
 				234AAB951E262E290002784A /* QKChatVoiceCell.swift in Sources */,
 				235B9C541E2C756000D856DC /* QKChatSystemCell.swift in Sources */,
 				23A16E461E1B9608007CD73A /* MessageController.swift in Sources */,
@@ -908,6 +915,7 @@
 				233FA40F1E31F8D100953F4C /* UIScrollView+ChatAdditions.swift in Sources */,
 				23A2FCEC1E1CD1B400517AC5 /* QKConstactCell.swift in Sources */,
 				23417A3B1E1F471800A1DA34 /* QKMessageCell.swift in Sources */,
+				234F30ED1E5299D200D6324E /* AudioDelegate.swift in Sources */,
 				236D15AC1E51A225009C9105 /* QKProgressHUD.swift in Sources */,
 				235CCEA61E1E330F00C55ED3 /* NSDate+Extension.swift in Sources */,
 				235B239C1E24E46500980642 /* QKChatEmotionScollView.swift in Sources */,
