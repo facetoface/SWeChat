@@ -14,14 +14,20 @@
 		23417A3E1E1F739200A1DA34 /* UIBarButtonItem+Block.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23417A3D1E1F739200A1DA34 /* UIBarButtonItem+Block.swift */; };
 		23417A441E1F9B0800A1DA34 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23417A431E1F9B0800A1DA34 /* UIViewController+Extension.swift */; };
 		23417A461E1F9B6C00A1DA34 /* NSObject+String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23417A451E1F9B6C00A1DA34 /* NSObject+String.swift */; };
+		23471FBC1E6697A20059AE2E /* HttpManger+UploadAudio.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23471FBB1E6697A20059AE2E /* HttpManger+UploadAudio.swift */; };
 		234AAB821E25D6AC0002784A /* QKChatBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234AAB801E25D6AC0002784A /* QKChatBaseCell.swift */; };
 		234AAB951E262E290002784A /* QKChatVoiceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234AAB931E262E290002784A /* QKChatVoiceCell.swift */; };
 		234AAB961E262E290002784A /* QKChatVoiceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 234AAB941E262E290002784A /* QKChatVoiceCell.xib */; };
 		234AAB981E2631B90002784A /* QKChatCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234AAB971E2631B90002784A /* QKChatCellDelegate.swift */; };
+		234AB3BF1E65245E0009481B /* PHAsset+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234AB3BE1E65245E0009481B /* PHAsset+Extension.swift */; };
+		234AB3C11E652D020009481B /* HttpManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234AB3C01E652D020009481B /* HttpManager.swift */; };
+		234AB3C31E6541220009481B /* HttpManager+UploadImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234AB3C21E6541220009481B /* HttpManager+UploadImage.swift */; };
+		234AB3C51E65425F0009481B /* QKUploadModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234AB3C41E65425F0009481B /* QKUploadModel.swift */; };
 		234C02321E304DF200B57DA2 /* QKChatViewController+TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234C02311E304DF200B57DA2 /* QKChatViewController+TestData.swift */; };
 		234C02341E30519B00B57DA2 /* UITableView+ChatAdditions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234C02331E30519B00B57DA2 /* UITableView+ChatAdditions.swift */; };
 		234C02361E305F4700B57DA2 /* QKChatViewController+SubViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234C02351E305F4700B57DA2 /* QKChatViewController+SubViews.swift */; };
 		234C02381E30614500B57DA2 /* QKChatViewController+KeyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234C02371E30614500B57DA2 /* QKChatViewController+KeyBoard.swift */; };
+		234EE5EE1E5D318C002E9C4A /* QKImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234EE5ED1E5D318C002E9C4A /* QKImagePicker.swift */; };
 		234F30ED1E5299D200D6324E /* AudioDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234F30EC1E5299D200D6324E /* AudioDelegate.swift */; };
 		234F30EF1E52AF8000D6324E /* AudioFilesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234F30EE1E52AF8000D6324E /* AudioFilesManager.swift */; };
 		23536F491E271A2E00E3979C /* QKUserManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23536F481E271A2E00E3979C /* QKUserManger.swift */; };
@@ -75,6 +81,9 @@
 		236E610B1E287352008C4D21 /* QKChatTextCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236E61091E287352008C4D21 /* QKChatTextCell.swift */; };
 		236E610C1E287352008C4D21 /* QKChatTextCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 236E610A1E287352008C4D21 /* QKChatTextCell.xib */; };
 		236E610E1E2877DF008C4D21 /* QKChatTextParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 236E610D1E2877DF008C4D21 /* QKChatTextParser.swift */; };
+		2388F7571E63BDCE00386AD3 /* QKImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234EE5ED1E5D318C002E9C4A /* QKImagePicker.swift */; };
+		2388F7591E63C83C00386AD3 /* QKApplicationManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2388F7581E63C83C00386AD3 /* QKApplicationManger.swift */; };
+		2388F75B1E63CB3200386AD3 /* QKLocationManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2388F75A1E63CB3200386AD3 /* QKLocationManger.swift */; };
 		23A16DF01E1B884D007CD73A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16DEF1E1B884D007CD73A /* AppDelegate.swift */; };
 		23A16E051E1B884D007CD73A /* SWeChatTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16E041E1B884D007CD73A /* SWeChatTests.swift */; };
 		23A16E101E1B884D007CD73A /* SWeChatUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23A16E0F1E1B884D007CD73A /* SWeChatUITests.swift */; };
@@ -135,14 +144,20 @@
 		23417A3D1E1F739200A1DA34 /* UIBarButtonItem+Block.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+Block.swift"; sourceTree = "<group>"; };
 		23417A431E1F9B0800A1DA34 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		23417A451E1F9B6C00A1DA34 /* NSObject+String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSObject+String.swift"; sourceTree = "<group>"; };
+		23471FBB1E6697A20059AE2E /* HttpManger+UploadAudio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HttpManger+UploadAudio.swift"; sourceTree = "<group>"; };
 		234AAB801E25D6AC0002784A /* QKChatBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatBaseCell.swift; sourceTree = "<group>"; };
 		234AAB931E262E290002784A /* QKChatVoiceCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatVoiceCell.swift; sourceTree = "<group>"; };
 		234AAB941E262E290002784A /* QKChatVoiceCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKChatVoiceCell.xib; sourceTree = "<group>"; };
 		234AAB971E2631B90002784A /* QKChatCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatCellDelegate.swift; sourceTree = "<group>"; };
+		234AB3BE1E65245E0009481B /* PHAsset+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PHAsset+Extension.swift"; sourceTree = "<group>"; };
+		234AB3C01E652D020009481B /* HttpManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HttpManager.swift; sourceTree = "<group>"; };
+		234AB3C21E6541220009481B /* HttpManager+UploadImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HttpManager+UploadImage.swift"; sourceTree = "<group>"; };
+		234AB3C41E65425F0009481B /* QKUploadModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKUploadModel.swift; sourceTree = "<group>"; };
 		234C02311E304DF200B57DA2 /* QKChatViewController+TestData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "QKChatViewController+TestData.swift"; sourceTree = "<group>"; };
 		234C02331E30519B00B57DA2 /* UITableView+ChatAdditions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+ChatAdditions.swift"; sourceTree = "<group>"; };
 		234C02351E305F4700B57DA2 /* QKChatViewController+SubViews.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "QKChatViewController+SubViews.swift"; sourceTree = "<group>"; };
 		234C02371E30614500B57DA2 /* QKChatViewController+KeyBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "QKChatViewController+KeyBoard.swift"; sourceTree = "<group>"; };
+		234EE5ED1E5D318C002E9C4A /* QKImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKImagePicker.swift; sourceTree = "<group>"; };
 		234F30EC1E5299D200D6324E /* AudioDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioDelegate.swift; sourceTree = "<group>"; };
 		234F30EE1E52AF8000D6324E /* AudioFilesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioFilesManager.swift; sourceTree = "<group>"; };
 		23536F481E271A2E00E3979C /* QKUserManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKUserManger.swift; sourceTree = "<group>"; };
@@ -196,6 +211,8 @@
 		236E61091E287352008C4D21 /* QKChatTextCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatTextCell.swift; sourceTree = "<group>"; };
 		236E610A1E287352008C4D21 /* QKChatTextCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QKChatTextCell.xib; sourceTree = "<group>"; };
 		236E610D1E2877DF008C4D21 /* QKChatTextParser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKChatTextParser.swift; sourceTree = "<group>"; };
+		2388F7581E63C83C00386AD3 /* QKApplicationManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKApplicationManger.swift; sourceTree = "<group>"; };
+		2388F75A1E63CB3200386AD3 /* QKLocationManger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKLocationManger.swift; sourceTree = "<group>"; };
 		23A16DEC1E1B884D007CD73A /* SWeChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SWeChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		23A16DEF1E1B884D007CD73A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		23A16E001E1B884D007CD73A /* SWeChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SWeChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -508,6 +525,7 @@
 				235B236C1E246DC300980642 /* QKFullyHorizontalFlowLayout.swift */,
 				236D15A91E519D71009C9105 /* QKGlobalHelper.swift */,
 				236D15AB1E51A225009C9105 /* QKProgressHUD.swift */,
+				234EE5ED1E5D318C002E9C4A /* QKImagePicker.swift */,
 			);
 			path = General;
 			sourceTree = "<group>";
@@ -521,6 +539,7 @@
 				23417A431E1F9B0800A1DA34 /* UIViewController+Extension.swift */,
 				23417A451E1F9B6C00A1DA34 /* NSObject+String.swift */,
 				2362E2C41E236CB900CAA3E2 /* UIView+Frame.swift */,
+				234AB3BE1E65245E0009481B /* PHAsset+Extension.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -582,6 +601,8 @@
 		23A2FCDE1E1CC30900517AC5 /* CoreModule */ = {
 			isa = PBXGroup;
 			children = (
+				2388F7581E63C83C00386AD3 /* QKApplicationManger.swift */,
+				2388F75A1E63CB3200386AD3 /* QKLocationManger.swift */,
 			);
 			name = CoreModule;
 			path = Classes/CoreModule;
@@ -590,6 +611,10 @@
 		23A2FCDF1E1CC34D00517AC5 /* Http */ = {
 			isa = PBXGroup;
 			children = (
+				234AB3C01E652D020009481B /* HttpManager.swift */,
+				234AB3C21E6541220009481B /* HttpManager+UploadImage.swift */,
+				234AB3C41E65425F0009481B /* QKUploadModel.swift */,
+				23471FBB1E6697A20059AE2E /* HttpManger+UploadAudio.swift */,
 			);
 			path = Http;
 			sourceTree = "<group>";
@@ -866,10 +891,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				234C02321E304DF200B57DA2 /* QKChatViewController+TestData.swift in Sources */,
+				2388F7591E63C83C00386AD3 /* QKApplicationManger.swift in Sources */,
 				23536F491E271A2E00E3979C /* QKUserManger.swift in Sources */,
 				2362E2C31E23687100CAA3E2 /* QKConfig.swift in Sources */,
 				23417A441E1F9B0800A1DA34 /* UIViewController+Extension.swift in Sources */,
 				23A16E4C1E1B9659007CD73A /* MeController.swift in Sources */,
+				2388F75B1E63CB3200386AD3 /* QKLocationManger.swift in Sources */,
 				23417A381E1F2D3200A1DA34 /* QKMessageActionFloatView.swift in Sources */,
 				235B237D1E24CD0A00980642 /* QKChatSubModel.swift in Sources */,
 				235B239F1E24E46500980642 /* QKChatVoiceIndicatorView.swift in Sources */,
@@ -881,6 +908,7 @@
 				236D15AA1E519D71009C9105 /* QKGlobalHelper.swift in Sources */,
 				23536F4B1E27220D00E3979C /* QKYYTextLinePositionModifier.swift in Sources */,
 				235B9C571E2C761D00D856DC /* QKChatEdgeLabel.swift in Sources */,
+				234AB3C51E65425F0009481B /* QKUploadModel.swift in Sources */,
 				236D15A61E5197EB009C9105 /* QKChatViewController+Interaction.swift in Sources */,
 				236D15B01E51AEDA009C9105 /* QKChatButton+UI.swift in Sources */,
 				236D15AE1E51AD17009C9105 /* QKChatViewController+ActionBar.swift in Sources */,
@@ -902,7 +930,9 @@
 				235B9C541E2C756000D856DC /* QKChatSystemCell.swift in Sources */,
 				23A16E461E1B9608007CD73A /* MessageController.swift in Sources */,
 				234C02361E305F4700B57DA2 /* QKChatViewController+SubViews.swift in Sources */,
+				234AB3C11E652D020009481B /* HttpManager.swift in Sources */,
 				23A2FCE21E1CC38000517AC5 /* QKContactModel.swift in Sources */,
+				234AB3BF1E65245E0009481B /* PHAsset+Extension.swift in Sources */,
 				234AAB981E2631B90002784A /* QKChatCellDelegate.swift in Sources */,
 				234C02341E30519B00B57DA2 /* UITableView+ChatAdditions.swift in Sources */,
 				235B239B1E24E46500980642 /* QKChatEmotionInputView.swift in Sources */,
@@ -911,11 +941,13 @@
 				235B23981E24E46500980642 /* QKChatActionBarView.swift in Sources */,
 				23A2FCE41E1CC4F200517AC5 /* QKModel.swift in Sources */,
 				236E610E1E2877DF008C4D21 /* QKChatTextParser.swift in Sources */,
+				234AB3C31E6541220009481B /* HttpManager+UploadImage.swift in Sources */,
 				235B23A31E24E97D00980642 /* QKImageFilesManger.swift in Sources */,
 				233FA40F1E31F8D100953F4C /* UIScrollView+ChatAdditions.swift in Sources */,
 				23A2FCEC1E1CD1B400517AC5 /* QKConstactCell.swift in Sources */,
 				23417A3B1E1F471800A1DA34 /* QKMessageCell.swift in Sources */,
 				234F30ED1E5299D200D6324E /* AudioDelegate.swift in Sources */,
+				23471FBC1E6697A20059AE2E /* HttpManger+UploadAudio.swift in Sources */,
 				236D15AC1E51A225009C9105 /* QKProgressHUD.swift in Sources */,
 				235CCEA61E1E330F00C55ED3 /* NSDate+Extension.swift in Sources */,
 				235B239C1E24E46500980642 /* QKChatEmotionScollView.swift in Sources */,
@@ -924,6 +956,7 @@
 				235B239D1E24E46500980642 /* QKChatShareMoreView.swift in Sources */,
 				235B9C4D1E2C596B00D856DC /* QKEmojiDictionary.swift in Sources */,
 				235B237B1E24CBFF00980642 /* QKChatModel.swift in Sources */,
+				234EE5EE1E5D318C002E9C4A /* QKImagePicker.swift in Sources */,
 				236E610B1E287352008C4D21 /* QKChatTextCell.swift in Sources */,
 				236B57421E2E0C4C00E9208C /* QKChatViewController+CellEnums.swift in Sources */,
 				23417A3E1E1F739200A1DA34 /* UIBarButtonItem+Block.swift in Sources */,
@@ -949,6 +982,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				23A16E101E1B884D007CD73A /* SWeChatUITests.swift in Sources */,
+				2388F7571E63BDCE00386AD3 /* QKImagePicker.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

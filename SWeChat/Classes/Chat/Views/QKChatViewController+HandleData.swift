@@ -41,4 +41,26 @@ extension QKChatViewController {
         })
     }
     
+    func chatSendImage(_ imageModel: ChatImageModel) {
+        dispatch_async_safely_to_main_queue {
+            [weak self ] in
+            guard let strongSelf = self else { return }
+            let model = QKChatModel.init(imageModel: imageModel)
+            strongSelf.itemDataSouce.append(model)
+            let insertIndexPath = IndexPath.init(row: strongSelf.itemDataSouce.count - 1, section: 0)
+            strongSelf.listTableView.insertRowsAtBottom([insertIndexPath])
+        }
+    }
+    
+    func chatSendVoice(_ audioModel: ChatAudioModel) {
+        dispatch_async_safely_to_main_queue {
+            [weak self] in
+            guard let strongSelf = self else { return }
+            let model = QKChatModel.init(audioModel: audioModel)
+            strongSelf.itemDataSouce.append(model)
+            let insertIndexPath = IndexPath.init(row: strongSelf.itemDataSouce.count - 1, section: 0)
+            strongSelf.listTableView.insertRowsAtBottom([insertIndexPath])
+        }
+    }
+    
 }

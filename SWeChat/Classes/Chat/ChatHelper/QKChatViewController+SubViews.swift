@@ -55,6 +55,15 @@ extension QKChatViewController {
         self.emotionInputeView = UIView.ts_viewFromNib(QKChatEmotionInputView.self)
         self.emotionInputeView.delegate = self
         self.view.addSubview(self.emotionInputeView)
+        self.emotionInputeView.snp.makeConstraints { [weak self] (make) -> Void in
+            guard let strongSelf = self else { return }
+            make.left.equalTo(strongSelf.view.snp.left)
+            make.right.equalTo(strongSelf.view.snp.right)
+            make.top.equalTo(strongSelf.chatActionBarView.snp.bottom).offset(0)
+            make.height.equalTo(kCustomKeyboardHeight)
+        }
+        self.shareMoreView = UIView.ts_viewFromNib(QKChatShareMoreView.self)
+        self.shareMoreView!.delegate = self
         
     }
     

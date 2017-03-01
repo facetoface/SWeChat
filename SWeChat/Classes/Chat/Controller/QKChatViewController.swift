@@ -30,6 +30,7 @@ final class QKChatViewController: UIViewController {
     var emotionInputeView: QKChatEmotionInputView!
     var shareMoreView: QKChatShareMoreView!
     var voiceIndicatorView: QKChatVoiceIndicatorView!
+    var imagePicker: UIImagePickerController!
     let disposeBag = DisposeBag()
     var itemDataSouce = [QKChatModel]()
     var isReloading: Bool = false
