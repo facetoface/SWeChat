@@ -29,6 +29,7 @@
 		234C02381E30614500B57DA2 /* QKChatViewController+KeyBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234C02371E30614500B57DA2 /* QKChatViewController+KeyBoard.swift */; };
 		234C0E681E67C27D00B4B6B8 /* Expression.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 234C0E661E67C27D00B4B6B8 /* Expression.bundle */; };
 		234C0E691E67C27D00B4B6B8 /* Expression.plist in Resources */ = {isa = PBXBuildFile; fileRef = 234C0E671E67C27D00B4B6B8 /* Expression.plist */; };
+		234C0E6B1E67C4F100B4B6B8 /* AudioPlayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234C0E6A1E67C4F100B4B6B8 /* AudioPlayManager.swift */; };
 		234EE5EE1E5D318C002E9C4A /* QKImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234EE5ED1E5D318C002E9C4A /* QKImagePicker.swift */; };
 		234F30ED1E5299D200D6324E /* AudioDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234F30EC1E5299D200D6324E /* AudioDelegate.swift */; };
 		234F30EF1E52AF8000D6324E /* AudioFilesManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234F30EE1E52AF8000D6324E /* AudioFilesManager.swift */; };
@@ -161,6 +162,7 @@
 		234C02371E30614500B57DA2 /* QKChatViewController+KeyBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "QKChatViewController+KeyBoard.swift"; sourceTree = "<group>"; };
 		234C0E661E67C27D00B4B6B8 /* Expression.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Expression.bundle; sourceTree = "<group>"; };
 		234C0E671E67C27D00B4B6B8 /* Expression.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Expression.plist; sourceTree = "<group>"; };
+		234C0E6A1E67C4F100B4B6B8 /* AudioPlayManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioPlayManager.swift; sourceTree = "<group>"; };
 		234EE5ED1E5D318C002E9C4A /* QKImagePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QKImagePicker.swift; sourceTree = "<group>"; };
 		234F30EC1E5299D200D6324E /* AudioDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioDelegate.swift; sourceTree = "<group>"; };
 		234F30EE1E52AF8000D6324E /* AudioFilesManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioFilesManager.swift; sourceTree = "<group>"; };
@@ -333,6 +335,7 @@
 				236D15B11E51BB0E009C9105 /* AudioRecordManager.swift */,
 				234F30EC1E5299D200D6324E /* AudioDelegate.swift */,
 				234F30EE1E52AF8000D6324E /* AudioFilesManager.swift */,
+				234C0E6A1E67C4F100B4B6B8 /* AudioPlayManager.swift */,
 			);
 			path = ChatHelper;
 			sourceTree = "<group>";
@@ -950,6 +953,7 @@
 				23A2FCE41E1CC4F200517AC5 /* QKModel.swift in Sources */,
 				236E610E1E2877DF008C4D21 /* QKChatTextParser.swift in Sources */,
 				234AB3C31E6541220009481B /* HttpManager+UploadImage.swift in Sources */,
+				234C0E6B1E67C4F100B4B6B8 /* AudioPlayManager.swift in Sources */,
 				235B23A31E24E97D00980642 /* QKImageFilesManger.swift in Sources */,
 				233FA40F1E31F8D100953F4C /* UIScrollView+ChatAdditions.swift in Sources */,
 				23A2FCEC1E1CD1B400517AC5 /* QKConstactCell.swift in Sources */,
