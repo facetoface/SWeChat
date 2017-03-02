@@ -10,6 +10,8 @@ import UIKit
 import SnapKit
 import RxSwift
 
+private let kChatLoadMoreOffset: CGFloat = 30
+
 final class QKChatViewController: UIViewController {
     var messageModel: MessageModel?
     @IBOutlet var refreshView: UIView!
@@ -58,13 +60,26 @@ final class QKChatViewController: UIViewController {
         self.setupActionBarButtonInerAction()
         
         AudioRecordInstance.delegate = self
-        
+        AudioPlayInstance.delegate = self
 
-    
         self.firstFetchMessageList()
         
     }
 
+    override func viewDidAppear(_ animated: Bool) {
+        AudioRecordInstance.checkPermissionAndSetupRecord()
+        self.checkCameraPermission()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(self)
+        AudioPlayInstance.stopPlayer()
+    }
+    
+    deinit {
+        log.verbose("deinit")
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
     }
@@ -129,5 +144,30 @@ extension QKChatViewController: QKChatCellDelegate {
         
     }
     
+    
+}
+
+extension QKChatViewController:  UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        if (scrollView.contentOffset.y < kChatLoadMoreOffset) {
+            if self.isEndRefreshing {
+                log.info("pull to refresh")
+                self.pullToLoadMore()
+            }
+        }
+    }
+    
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        self.hideAllKeyboard()
+    }
+    
+    func scrollViewDidEndDragging(_ scrollView: UIScrollView, willDecelerate decelerate: Bool) {
+        if (scrollView.contentOffset.y - scrollView.contentInset.top) < kChatLoadMoreOffset {
+            if self.isEndRefreshing {
+                log.info("pull to refresh")
+                self.pullToLoadMore()
+            }
+        }
+    }
     
 }

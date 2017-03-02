@@ -11,6 +11,7 @@ import AVFoundation
 import Alamofire
 import TSVoiceConverter
 
+let AudioPlayInstance = AudioPlayManager.shareInstance
 class AudioPlayManager: NSObject {
     fileprivate var audioPlayer: AVAudioPlayer?
     weak var delegate: PlayAudioDelegate?
