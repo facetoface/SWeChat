@@ -17,7 +17,7 @@ extension QKChatViewController {
         let shareButton: QKChatButton = self.chatActionBarView.shareButton
         
         voiceButton.rx.tap.subscribe {
-           [weak self] _ in
+            [weak self] _ in
             guard let strongSelf = self else {
                 return
             }
@@ -31,7 +31,7 @@ extension QKChatViewController {
                 voiceButton.emotionSwiftVoiceButtonUI(showKeyboard: false)
                 strongSelf.controlExpandableInputView(showExpandable: true)
             }
-        }.addDisposableTo(self.disposeBag)
+            }.addDisposableTo(self.disposeBag)
         
         var finishRecording: Bool = true
         let longTap = UILongPressGestureRecognizer()
@@ -62,7 +62,7 @@ extension QKChatViewController {
                 strongSelf.voiceIndicatorView.endRecord()
                 recordButton.replaceRecordButtonUI(isRecording: false)
             }
-        }.addDisposableTo(self.disposeBag)
+            }.addDisposableTo(self.disposeBag)
         
         emotionButton.rx.tap.subscribe {
             [weak self] _ in
@@ -75,8 +75,8 @@ extension QKChatViewController {
                 strongSelf.chatActionBarView.showEmotionKeyboard()
             }
             strongSelf.controlExpandableInputView(showExpandable: true)
-        }.addDisposableTo(self.disposeBag)
-
+            }.addDisposableTo(self.disposeBag)
+        
         shareButton.rx.tap.subscribe {
             [weak self] _ in
             guard let strongSelf = self else { return }
@@ -87,7 +87,7 @@ extension QKChatViewController {
                 strongSelf.chatActionBarView.showShareKeyboard()
             }
             strongSelf.controlExpandableInputView(showExpandable: true)
-        }.addDisposableTo(self.disposeBag)
+            }.addDisposableTo(self.disposeBag)
         
         let textView: UITextView = self.chatActionBarView.inputTextView
         let tap = UITapGestureRecognizer()
@@ -96,14 +96,14 @@ extension QKChatViewController {
             textView.inputView = nil
             textView.becomeFirstResponder()
             textView.reloadInputViews()
-        }.addDisposableTo(self.disposeBag)
+            }.addDisposableTo(self.disposeBag)
         
     }
     
     func controlExpandableInputView(showExpandable: Bool) {
         let textView = self.chatActionBarView.inputTextView
         let currentTextHeight = self.chatActionBarView.inputTextViewCurrentHeight
-        UIView.animate(withDuration: 0.3) { 
+        UIView.animate(withDuration: 0.3) {
             () -> Void in
             let textHeihgt = showExpandable ? currentTextHeight : kChatActionBarOriginalHeight
             self.chatActionBarView.snp.updateConstraints{ (make) -> Void in

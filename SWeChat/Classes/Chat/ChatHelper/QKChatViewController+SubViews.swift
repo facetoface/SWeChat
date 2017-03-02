@@ -16,8 +16,8 @@ extension QKChatViewController {
     func setupSubViews(_ delegate: UITextViewDelegate) {
         self.setupActionBar(delegate)
         self.initListTableView()
-        
-        
+        self.setupKeyboardInputView()
+        self.setupVoiceIndicatorView()
     }
     
     fileprivate func initListTableView() {
@@ -64,7 +64,28 @@ extension QKChatViewController {
         }
         self.shareMoreView = UIView.ts_viewFromNib(QKChatShareMoreView.self)
         self.shareMoreView!.delegate = self
+        self.view.addSubview(self.shareMoreView)
+        self.shareMoreView.snp.makeConstraints { [weak self] (make) -> Void in
+            guard let strongSelf = self else { return }
+            make.left.equalTo(strongSelf.view.snp.left)
+            make.right.equalTo(strongSelf.view.snp.right)
+            make.top.equalTo(strongSelf.chatActionBarView.snp.bottom).offset(0)
+            make.height.equalTo(kCustomKeyboardHeight)
+        }
         
+    }
+    
+    fileprivate func setupVoiceIndicatorView() {
+        self.voiceIndicatorView = UIView.ts_viewFromNib(QKChatVoiceIndicatorView.self)
+        self.view.addSubview(self.voiceIndicatorView)
+        self.voiceIndicatorView.snp.makeConstraints { [weak self] (make) -> Void in
+            guard let strongSelf = self else { return }
+            make.top.equalTo(strongSelf.view.snp.top).offset(100)
+            make.left.equalTo(strongSelf.view.snp.left)
+            make.bottom.equalTo(strongSelf.view.snp.bottom).offset(-100)
+            make.right.equalTo(strongSelf.view.snp.right)
+        }
+        self.voiceIndicatorView.isHidden = true
     }
     
 }
