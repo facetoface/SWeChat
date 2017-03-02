@@ -53,11 +53,15 @@ final class QKChatViewController: UIViewController {
         self.listTableView.tableHeaderView = self.refreshView
         
 
-    
-
+        self.setupSubViews(self)
+        self.keyboardControl()
+        self.setupActionBarButtonInerAction()
         
+        AudioRecordInstance.delegate = self
+        
+
+    
         self.firstFetchMessageList()
-        self.listTableView.reloadData()
         
     }
 
