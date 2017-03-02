@@ -64,6 +64,33 @@ extension QKChatViewController {
     
     
     func fetchData() -> [QKChatModel]? {
-     return Array()
+        guard let JSONData = Data.ts_dataFromJSONFile("chat") else {
+            return nil
+        }
+        
+        var list = [QKChatModel]()
+        let jsonObj = JSON(data: JSONData)
+        if jsonObj != JSON.null {
+            var temp: QKChatModel?
+            for dict in jsonObj["data"].arrayObject! {
+                guard let model = QKMapper<QKChatModel>().map(JSON: dict as! [String : Any]) else {
+                    continue
+                }
+                /**
+                 *  1，刷新获取的第一条数据，加上时间 model
+                 *  2，当后面的数据比前面一条多出 2 分钟以上，加上时间 model
+                 */
+                if temp == nil || model.isLateforTowMinutes(temp!) {
+                    guard let timestamp = model.timestamp else {
+                        continue
+                    }
+                    list.insert(QKChatModel(timestamp: timestamp), at: list.count)
+                }
+                list.insert(model, at: list.count)
+                temp = model
+            }
+        }
+        return list
+
     }
 }
