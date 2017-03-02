@@ -41,9 +41,63 @@ extension QKChatViewController {
             if longTap.state == .began {
                 finishRecording = true
                 strongSelf.voiceIndicatorView.recording()
+                AudioRecordInstance.startRecord()
+                recordButton.replaceRecordButtonUI(isRecording: true)
+            } else if longTap.state == .changed {
+                let point = longTap.location(in: self!.voiceIndicatorView)
+                if strongSelf.voiceIndicatorView.point(inside: point, with: nil) {
+                    strongSelf.voiceIndicatorView.slideToCanceRecord()
+                    finishRecording = false
+                } else {
+                    strongSelf.voiceIndicatorView.recording()
+                    finishRecording = true
+                }
                 
+            } else if longTap.state == .ended {
+                if finishRecording {
+                    AudioRecordInstance.stopRecord()
+                } else {
+                    AudioRecordInstance.cancelRecord()
+                }
+                strongSelf.voiceIndicatorView.endRecord()
+                recordButton.replaceRecordButtonUI(isRecording: false)
             }
-        }
+        }.addDisposableTo(self.disposeBag)
+        
+        emotionButton.rx.tap.subscribe {
+            [weak self] _ in
+            guard let strongSelf = self else { return }
+            strongSelf.chatActionBarView.resetButtonUI()
+            emotionButton.replaceEmotionButtonUI(showKeyboard: !emotionButton.showTypingKeyboard)
+            if emotionButton.showTypingKeyboard {
+                strongSelf.chatActionBarView.showTyingKeyboard()
+            } else {
+                strongSelf.chatActionBarView.showEmotionKeyboard()
+            }
+            strongSelf.controlExpandableInputView(showExpandable: true)
+        }.addDisposableTo(self.disposeBag)
+
+        shareButton.rx.tap.subscribe {
+            [weak self] _ in
+            guard let strongSelf = self else { return }
+            strongSelf.chatActionBarView.resetButtonUI()
+            if shareButton.showTypingKeyboard {
+                strongSelf.chatActionBarView.showTyingKeyboard()
+            } else {
+                strongSelf.chatActionBarView.showShareKeyboard()
+            }
+            strongSelf.controlExpandableInputView(showExpandable: true)
+        }.addDisposableTo(self.disposeBag)
+        
+        let textView: UITextView = self.chatActionBarView.inputTextView
+        let tap = UITapGestureRecognizer()
+        textView.addGestureRecognizer(tap)
+        tap.rx.event.subscribe {
+            textView.inputView = nil
+            textView.becomeFirstResponder()
+            textView.reloadInputViews()
+        }.addDisposableTo(self.disposeBag)
+        
     }
     
     func controlExpandableInputView(showExpandable: Bool) {
