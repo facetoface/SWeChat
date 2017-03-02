@@ -38,7 +38,7 @@ extension QKChatViewController {
             DispatchQueue.main.async(execute: { 
                 self.itemDataSouce.insert(contentsOf: list, at: 0)
                 self.indicatorView.stopAnimating()
-//                self.updateta
+                self.updateTableWithNewRowCount(list.count)
                 self.isReloading = true
             })
         }
