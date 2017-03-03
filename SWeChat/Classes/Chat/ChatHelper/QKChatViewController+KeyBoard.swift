@@ -14,7 +14,7 @@ extension QKChatViewController {
         let notificationCenter = NotificationCenter.default
         notificationCenter.ts_addObserver(self, name: Notification.Name.UIKeyboardWillShow.rawValue, object: nil, handler: {[weak self] observer, notification in
             guard let strongSelf = self else { return }
-            strongSelf.listTableView.scrollToBottom(false)
+            strongSelf.listTableView.scrollToTopAnimated(false)
             strongSelf.keyboardControl(notification, isShowing: true)
         })
         
@@ -24,7 +24,7 @@ extension QKChatViewController {
             }
         })
         
-        notificationCenter.ts_addObserver(self, name: NSNotification.Name.UIKeyboardWillShow.rawValue, object: nil, handler: {
+        notificationCenter.ts_addObserver(self, name: NSNotification.Name.UIKeyboardWillHide.rawValue, object: nil, handler: {
             [weak self] observer, notification in
             guard let strongSelf = self else { return }
             strongSelf.keyboardControl(notification, isShowing: false)

@@ -62,8 +62,8 @@
                         <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                     </collectionViewFlowLayout>
                     <connections>
-                        <outlet property="dataSource" destination="-1" id="zCK-fa-7nS"/>
-                        <outlet property="delegate" destination="-1" id="BEI-yO-RbH"/>
+                        <outlet property="dataSource" destination="-1" id="vSy-nM-1d1"/>
+                        <outlet property="delegate" destination="-1" id="oZh-6U-Xi4"/>
                     </connections>
                 </collectionView>
             </subviews>

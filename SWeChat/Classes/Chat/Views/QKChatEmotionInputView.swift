@@ -45,6 +45,9 @@ class QKChatEmotionInputView: UIView {
     }
     
     override func awakeFromNib() {
+        
+        self.isUserInteractionEnabled = true
+        
         let itemWidth = (UIScreen.ts_width - 10*2)/kNumberOfOneRow
         let padding = (UIScreen.ts_width - kNumberOfOneRow * itemWidth) / 2.0
         let paddingLeft = padding
@@ -68,11 +71,14 @@ class QKChatEmotionInputView: UIView {
             self.emotionDataSouce.append(model)
         }
         self.groupDataSouce = $.chunk(self.emotionDataSouce, size: kOneGroupCount)
-        self.listCollectionView.reloadData()
         self.emotionPageControl.numberOfPages = self.groupDataSouce.count
+        self.listCollectionView.dataSource = self
+        self.listCollectionView.delegate = self
+        self.listCollectionView.reloadData()
+
     }
     
-    @IBAction func sendTaped(_ sender: Any) {
+    @IBAction func sendTaped(_ sender: AnyObject) {
         if let delegate = self.delegate {
             delegate.chatEmotionInputViewDidTapSend()
         }
