@@ -20,7 +20,11 @@ protocol ChatShareMoreViewDelegate: class {
 }
 class QKChatShareMoreView: UIView {
     @IBOutlet weak var pageControl: UIPageControl!
-    @IBOutlet weak var listCollectionView: UICollectionView!
+    @IBOutlet weak var listCollectionView: UICollectionView! {
+        didSet {
+            listCollectionView.scrollsToTop = false
+        }
+    }
     @IBOutlet weak var collectionViewHeightConstraint: NSLayoutConstraint!
     weak var delegate: ChatShareMoreViewDelegate?
     internal let disposeBag = DisposeBag()

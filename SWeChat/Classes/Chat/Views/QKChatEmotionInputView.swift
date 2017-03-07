@@ -56,6 +56,8 @@ class QKChatEmotionInputView: UIView {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .horizontal
         layout.itemSize = CGSize(width: itemWidth, height: itemHeight)
+        layout.minimumLineSpacing = 0
+        layout.minimumInteritemSpacing = 0
         layout.sectionInset = UIEdgeInsetsMake(0, paddingLeft, 0, paddingRight)
         
         self.listCollectionView.collectionViewLayout = layout

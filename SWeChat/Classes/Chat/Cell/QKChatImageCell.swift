@@ -54,8 +54,9 @@ class QKChatImageCell: QKChatBaseCell {
         }
         
         var imageOriginalWidth = kChatImageMinWidth
-        var imageOriginalHeight = kChatImageMinWidth
-        if (imageModel.imageId != nil) {
+        var imageOriginalHeight = kChatImageMinHeight
+        
+        if (imageModel.imageWidth != nil) {
             imageOriginalWidth = imageModel.imageWidth!
         }
         if (imageModel.imageHeight != nil) {

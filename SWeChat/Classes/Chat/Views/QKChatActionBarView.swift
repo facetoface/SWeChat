@@ -59,7 +59,7 @@ class QKChatActionBarView: UIView {
             recordButton.setBackgroundImage(UIImage.ts_imageWithColor(UIColor.init(ts_hexString: "#C6C7CB")), for: .highlighted)
             recordButton.layer.borderColor = UIColor.init(ts_hexString: "#C2C3C7").cgColor
             recordButton.layer.borderWidth = 0.5
-            recordButton.layer.cornerRadius = 0.5
+            recordButton.layer.cornerRadius = 5.0
             recordButton.layer.masksToBounds = true
             recordButton.isHidden = true
         }
@@ -139,7 +139,7 @@ extension QKChatActionBarView {
     func showRecording() {
         self.keyboardType = .default
         self.inputTextView.resignFirstResponder()
-        self.inputTextView.isHidden = false
+        self.inputTextView.isHidden = true
         if let delegate = self.delegate {
             delegate.chatActionBarRecordVoiceHideKeyboard()
         }

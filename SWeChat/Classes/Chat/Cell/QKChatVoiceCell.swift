@@ -33,11 +33,11 @@ class QKChatVoiceCell: QKChatBaseCell {
         let bubbleImage = stretchImage.resizableImage(withCapInsets: UIEdgeInsetsMake(30, 28, 85, 28), resizingMode: .stretch)
         self.listenVoiceButton.setBackgroundImage(bubbleImage, for: UIControlState())
         
-        let stretchImageHL = model.fromMe ? TSAsset.SenderTextNodeBkg.image : TSAsset.ReceiverTextNodeBkgHL.image
+        let stretchImageHL = model.fromMe ? TSAsset.SenderTextNodeBkgHL.image : TSAsset.ReceiverTextNodeBkgHL.image
         let bubbleImageHL = stretchImageHL.resizableImage(withCapInsets: UIEdgeInsetsMake(30, 28, 85, 28), resizingMode: .stretch)
         self.listenVoiceButton.setBackgroundImage(bubbleImageHL, for: .highlighted)
         
-        let voiceImage = model.fromMe ? TSAsset.SenderVoiceNodePlaying.image : TSAsset.ReceiverTextNodeBkg.image
+        let voiceImage = model.fromMe ? TSAsset.SenderVoiceNodePlaying.image : TSAsset.ReceiverVoiceNodePlaying.image
         self.listenVoiceButton.setImage(voiceImage, for: UIControlState())
         
         self.listenVoiceButton.imageEdgeInsets = model.fromMe ? UIEdgeInsetsMake(-kChatBubbleBottomTransparentHeight, 0, 0, kChatVoicePlayingMarginLeft) : UIEdgeInsetsMake(-kChatBubbleBottomTransparentHeight, kChatVoicePlayingMarginLeft, 0, 0)
