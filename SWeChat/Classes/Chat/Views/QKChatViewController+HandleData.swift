@@ -37,6 +37,8 @@ extension QKChatViewController {
             strongSelf.listTableView.insertRowsAtBottom([insertIndexPath])
             textView.text = ""
             
+            strongSelf.textViewDidChange(strongSelf.chatActionBarView.inputTextView)
+            
             
         })
     }

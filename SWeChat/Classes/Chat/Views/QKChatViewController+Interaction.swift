@@ -19,7 +19,7 @@ extension QKChatViewController: ChatShareMoreViewDelegate {
         }, cancel: { (assets: [PHAsset]) -> Void in
             print("Cancel: \(assets)")
         }, finish: {[weak self] (assets: [PHAsset]) -> Void in
-            print("Cancel: \(assets)")
+            print("Finish: \(assets)")
             guard let strongSelf = self else { return }
             if let image = assets.get(index: 0).getUIImage() {
                 strongSelf.resizeAndSendImage(image)
@@ -36,7 +36,7 @@ extension QKChatViewController: ChatShareMoreViewDelegate {
         } else if authStatus == .restricted || authStatus == .denied {
             QKAlertView_show("无法访问您的相机", message: "请到设置 -> 隐私 -> 相机 ，打开访问权限" )
         } else if authStatus == .authorized {
-            
+            self.openCamera()
         }
     }
     
@@ -106,6 +106,7 @@ extension QKChatViewController: UINavigationControllerDelegate, UIImagePickerCon
                 self.resizeAndSendImage(image)
             }
         }
+        picker.dismiss(animated: true, completion: nil)
     }
     
     func imagePickerControllerDidCancel(_ picker: UIImagePickerController) {
